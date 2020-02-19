@@ -1,5 +1,5 @@
 # COSC330
-Object Oriented Design and Graphical User Interfaces
+Object Oriented Design Patterns, Graphical User Interfaces and Event Driven Programming
 
 Taken in the spring semester of 2020 with Dr. Xiaohong Wang.
 

@@ -3,4 +3,4 @@ Object Oriented Design Patterns, Graphical User Interfaces and Event Driven Prog
 
 Taken in the spring semester of 2020 with Dr. Xiaohong Wang.
 
-Worked on develping android apps using android studio.
+Worked on developing android apps using android studio.

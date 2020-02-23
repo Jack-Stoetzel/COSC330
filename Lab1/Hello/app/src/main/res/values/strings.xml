@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hello</string>
+
+
+    <string name="button_text">Exclamation</string>
+
+    <string name="hello">Hello</string>
+    <string name="goodbye">Goodbye</string>
+
+    <string name="desc_girl">Picture of girl</string>
+
+</resources>

@@ -1,9 +1,9 @@
 # Lab 1
 
-## Objective
+## Task 1: Hello & Goodbye
+Make an app that uses a button to change text from 'Hello' to 'Goodbye'.
 
-1. Make an app that uses a button to change text from 'Hello' to 'Goodbye'.
+## Task 2: Button Counter
+Make an app that uses a button to increase a counter everytime the button is clicked. Start the button at 0.
 
-2. Make an app that uses a button to increase a counter everytime the button is clicked. Start the button at 0.
-
-##### Both apps written in Java and developed in Android Studio.
+##### All apps written in Java and developed using Android Studio.

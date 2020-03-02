@@ -6,13 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/FeedingButton"
+        android:layout_width="216dp"
+        android:layout_height="73dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="feed"
+        android:text="@string/feed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/MonsterImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:contentDescription="@string/hungry"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/FeedingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cookie_monster_no_cookie" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="409dp"
+        android:layout_height="445dp"
+        android:contentDescription="@string/thanks"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/FeedingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/new_pic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

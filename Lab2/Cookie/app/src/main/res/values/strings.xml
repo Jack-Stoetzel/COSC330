@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Cookie</string>
+    <string name="hungry">I am very HUNGRY</string>
+    <string name="thanks">Thank you for the Cookie</string>
+    <string name="feed">Feed him a cookie</string>
+    <string name="done">Done</string>
 </resources>

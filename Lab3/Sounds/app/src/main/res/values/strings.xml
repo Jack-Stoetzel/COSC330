@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sounds</string>
+
+    <string name="cow">Mad Cow Music Player</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+</resources>

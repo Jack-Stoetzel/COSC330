@@ -125,4 +125,19 @@
     </string-array>
 
     <string name="blank">Blank</string>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <string name="iDiabetes">Diabetes</string>
+    <string name="iCalories">Calories</string>
+    <string name="iSodium">Sodium</string>
+    <string name="iVitamins">Vitamins</string>
+    <string name="iFruit">Fruit</string>
+    <string name="iObese">Obese</string>
+    <string name="iExercise">Exercise</string>
+    <string name="iCarbohydrates">Carbohydrates</string>
+
+    <string name="iDownCP">Down</string>
+    <string name="iAcrossCP">Across</string>
+
 </resources>

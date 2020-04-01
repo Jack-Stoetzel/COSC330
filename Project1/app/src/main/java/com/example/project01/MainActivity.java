@@ -40,16 +40,17 @@ public class MainActivity extends AppCompatActivity {
         menu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent;
                 switch(i)
                 {
                     case 0:
-                        Intent intent = new Intent(getApplicationContext(),WordList.class);
+                        intent = new Intent(getApplicationContext(),WordList.class);
                         startActivity(intent);
                         break;
-//                    case 1:
-//                        Intent intent = new Intent(getApplicationContext(),.class);
-//                        startActivity(intent);
-//                        break;
+                    case 1:
+                        intent = new Intent(getApplicationContext(), CrosswordActivity.class);
+                        startActivity(intent);
+                        break;
 //                    case 2:
 //                        Intent intent = new Intent(getApplicationContext(),.class);
 //                        startActivity(intent);

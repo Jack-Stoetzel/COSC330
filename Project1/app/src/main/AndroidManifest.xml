@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:label="@string/app_name" android:name=".WordList"/>
         <activity android:label="@string/app_name" android:name=".WordDisplay"/>
+        <activity android:label="@string/app_name" android:name=".CrosswordActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

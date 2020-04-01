@@ -1,3 +1,128 @@
 <resources>
     <string name="app_name">Project01</string>
+
+    <string-array name="glossary">
+        <item>Appointment</item>
+        <item>uh POINT ment</item>
+        <item>A time to meet or agree to see someone</item>
+
+        <item>Allergy</item>
+        <item>AL ler JEE</item>
+        <item>Reaction to certain foods or other things, may cause rash, hives, sneezing, or other problems</item>
+
+        <item>Checkup</item>
+        <item>CHECK up</item>
+        <item>A visit to the doctor when you are not sick, also called a well visit</item>
+
+        <item>Co-Pay</item>
+        <item>CO paa</item>
+        <item>When you pay a set fee every time you go to the doctor and your health insurance pays the rest</item>
+
+        <item>Emergency</item>
+        <item>ee MER gen see</item>
+        <item>When there is a serious problem and you need help right away</item>
+
+        <item>Fever</item>
+        <item>FEE ver</item>
+        <item>When your body temperature is too high</item>
+
+        <item>Fiber</item>
+        <item>FI bur</item>
+        <item>Foods that help you feel full and helps your stool come out</item>
+
+        <item>Generic Medicine</item>
+        <item>Gen AIR ik MED uh sin</item>
+        <item>Not a name brand medicine, usually less expensive than the name brand</item>
+
+        <item>Headache</item>
+        <item>Hed A eek</item>
+        <item>Pain or ache in your head</item>
+
+        <item>Health History</item>
+        <item>H elth HISS tor EE</item>
+        <item>The health problems you had in the past</item>
+
+        <item>Health Insurance</item>
+        <item>H elth In SHER uns</item>
+        <item>A program where you pay each month and then the program pays for your health care</item>
+
+        <item>Label</item>
+        <item>LA bel</item>
+        <item>On the bottle or box to describe the medicine and how to take it</item>
+
+        <item>Medical Interpreter</item>
+        <item>MED uh cal in TERP ret er</item>
+        <item>A person who is trained to translate information from doctor to patient and from patient to doctor</item>
+
+        <item>Medicine</item>
+        <item>MED uh sin</item>
+        <item>Used when you are sick or have aches and pain to help make you feel well</item>
+
+        <item>Nutrition</item>
+        <item>New TRISH un</item>
+        <item>How the body uses food to stay healthy</item>
+
+        <item>Obesity</item>
+        <item>oh BEE sit ee</item>
+        <item>Being very overweight, a weight that is dangerous for your health</item>
+
+        <item>Over-the- counter (OTC)</item>
+        <item>O ver the COUNT er</item>
+        <item>Medicine anyone can buy at a store, you do not need a prescription</item>
+
+        <item>Pharmacy</item>
+        <item>FARM uh see</item>
+        <item>Where you go to buy medicine</item>
+
+        <item>Pharmacist</item>
+        <item>FARM us sist</item>
+        <item>A person who works in the pharmacy, a person who fills prescriptions</item>
+
+        <item>Prescription (Rx)</item>
+        <item>Pre SCRIP shun</item>
+        <item>You need one of these from a doctor to buy some kinds of medicine</item>
+
+        <item>Primary Care Center</item>
+        <item>PrI Mar EE Kare Senter</item>
+        <item>The place you go for all your basic health care needs, could be a health center, health clinic, or doctor’s office</item>
+
+        <item>Recipe</item>
+        <item>Re si PEE</item>
+        <item>List of what goes into a meal and how to prepare it</item>
+
+        <item>Side Effect</item>
+        <item>SIDE e fekt</item>
+        <item>An unwanted result or symptom, you get from taking some medicine</item>
+
+        <item>Sodium</item>
+        <item>SO dee um</item>
+        <item>Another word for salt</item>
+
+        <item>Sore Throat</item>
+        <item>SOR th ROT</item>
+        <item>When you throat hurts, it is hard to swallow</item>
+
+        <item>Symptoms</item>
+        <item>SIMP tums</item>
+        <item>Something that happens in the body that shows you have an injury or illness</item>
+
+        <item>Warning Label</item>
+        <item>WAR ning LA bel</item>
+        <item>Describes dangers and what NOT to do when taking medicine</item>
+
+        <item>Vitamins</item>
+        <item>Vita mins</item>
+        <item>A kind of nutrient in foods that help fight sickness and keep the body strong and healthy</item>
+    </string-array>
+
+    <string-array name="menu">
+        <item>Title 1</item>
+        <item>Title 2</item>
+        <item>Title 3</item>
+        <item>Title 4</item>
+        <item>Title 5</item>
+        <item>Title 6</item>
+    </string-array>
+
+    <string name="blank">Blank</string>
 </resources>

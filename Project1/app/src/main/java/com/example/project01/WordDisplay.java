@@ -22,10 +22,11 @@ public class WordDisplay extends AppCompatActivity {
 
     int[] images = {R.drawable.appointment, R.drawable.appointment, R.drawable.checkup, R.drawable.copay,
             R.drawable.emergency, R.drawable.fever, R.drawable.fiber, R.drawable.generic, R.drawable.headache,
-            R.drawable.history, R.drawable.insurance, R.drawable.labal, R.drawable.interpreter, R.drawable.medicine,
-            R.drawable.nutrition, R.drawable.obesity, R.drawable.otc, R.drawable.pharmacy, R.drawable.pharmacist,
-            R.drawable.rx, R.drawable.pcc, R.drawable.recipe, R.drawable.side, R.drawable.sodium, R.drawable.sore,
-            R.drawable.symptom, R.drawable.warning, R.drawable.vitamins};
+            R.drawable.history, R.drawable.immune, R.drawable.insurance, R.drawable.labal, R.drawable.interpreter,
+            R.drawable.medicine, R.drawable.mililiter, R.drawable.nutrient, R.drawable.nutrition, R.drawable.obesity,
+            R.drawable.otc, R.drawable.pharmacy, R.drawable.pharmacist, R.drawable.rx, R.drawable.pcc,
+            R.drawable.recipe, R.drawable.side, R.drawable.sodium, R.drawable.sore, R.drawable.symptom,
+            R.drawable.tablespoon, R.drawable.teaspoon, R.drawable.vaccine, R.drawable.warning, R.drawable.vitamins};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

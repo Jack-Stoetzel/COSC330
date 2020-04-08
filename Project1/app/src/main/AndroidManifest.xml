@@ -4,15 +4,16 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+
+        android:roundIcon="@drawable/app_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:label="@string/app_name" android:name=".WordList"/>
         <activity android:label="@string/app_name" android:name=".WordDisplay"/>
         <activity android:label="@string/app_name" android:name=".CrosswordActivity"/>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MenuList"/>
         <activity android:label="@string/app_name" android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,3 +24,7 @@
     </application>
 
 </manifest>
+    <!--
+    android:icon="@mipmap/ic_launcher"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    -->

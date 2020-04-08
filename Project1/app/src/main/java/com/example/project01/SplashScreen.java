@@ -85,7 +85,7 @@ public class SplashScreen extends AppCompatActivity {
     {
         if(validEmail && validPass)
         {
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            Intent intent = new Intent(getApplicationContext(), MenuList.class);
             startActivity(intent);
         }
     }

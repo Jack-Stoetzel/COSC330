@@ -150,6 +150,7 @@
     </string-array>
 
     <string name="blank">Blank</string>
+    <string name="sound">Sound</string>
     <string name="slogo">Wellness Logo</string>
     <string name="login">Log-In</string>
     <string name="email">Email</string>

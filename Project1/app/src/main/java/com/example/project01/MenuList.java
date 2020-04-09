@@ -50,10 +50,10 @@ public class MenuList extends AppCompatActivity {
                         intent = new Intent(getApplicationContext(), CrosswordActivity.class);
                         startActivity(intent);
                         break;
-//                    case 2:
-//                        intent = new Intent(getApplicationContext(),.class);
-//                        startActivity(intent);
-//                        break;
+                    case 2:
+                        intent = new Intent(getApplicationContext(), HeadPic.class);
+                        startActivity(intent);
+                        break;
 //                    case 3:
 //                        Intent intent = new Intent(getApplicationContext(),.class);
 //                        startActivity(intent);

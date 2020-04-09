@@ -11,4 +11,11 @@
     <color name="iNotActive">#AFAFAF</color>
     <color name="iSelected">#21FF00</color>
     <color name="iCorrect">#2F8330</color>
+    <color name="iReset">#9A3F3F</color>
+    <color name="iWordSearch">#DAC349</color>
+
+    <color name="iOrange">#FF9800</color>
+    <color name="iYellow">#DAC349</color>
+    <color name="iClear">#00FFFFFF</color>
+
 </resources>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BodyPic">
+
+    <ImageView
+        android:id="@+id/iBodyPicImg"
+        android:layout_width="354dp"
+        android:layout_height="394dp"
+        android:contentDescription="@string/iBodyPic"
+        android:src="@drawable/bodypic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/itextViewHead1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iHead"
+        android:textColor="@color/iOrange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/itextViewHead2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iHead"
+        android:textColor="@color/iOrange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/itextViewShoulder1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iShoulder"
+        android:textColor="@color/iOrange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <TextView
+        android:id="@+id/itextViewShoulder2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iShoulder"
+        android:textColor="@color/iOrange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/iBodyPicImg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <TextView
+        android:id="@+id/itextViewChest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iChest"
+        android:textColor="@color/iOrange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <TextView
+        android:id="@+id/itextViewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iBack"
+        android:textColor="@color/iOrange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/iBodyPicImg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.377" />
+
+    <TextView
+        android:id="@+id/itextViewStomach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iStomach"
+        android:textColor="@color/iOrange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42000002" />
+
+    <TextView
+        android:id="@+id/itextViewArm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iArm"
+        android:textColor="@color/iOrange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <TextView
+        android:id="@+id/itextViewArm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iArm"
+        android:textColor="@color/iOrange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/iBodyPicImg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <TextView
+        android:id="@+id/itextViewHand1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iHand"
+        android:textColor="@color/iOrange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <TextView
+        android:id="@+id/itextViewHand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iHand"
+        android:textColor="@color/iOrange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/iBodyPicImg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <TextView
+        android:id="@+id/itextViewFeet1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iFeet"
+        android:textColor="@color/iOrange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.877" />
+
+    <TextView
+        android:id="@+id/itextViewFeet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iFeet"
+        android:textColor="@color/iOrange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/iBodyPicImg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.877" />
+
+    <Button
+        android:id="@+id/ibuttonHead1"
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <Button
+        android:id="@+id/ibuttonHead2"
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <Button
+        android:id="@+id/ibuttonShoulder1"
+        android:layout_width="70dp"
+        android:layout_height="15dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
+
+    <Button
+        android:id="@+id/ibuttonShoulder2"
+        android:layout_width="70dp"
+        android:layout_height="15dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
+
+    <Button
+        android:id="@+id/ibuttonChest"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <Button
+        android:id="@+id/ibuttonStomach"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47000003" />
+
+    <Button
+        android:id="@+id/ibuttonBack"
+        android:layout_width="40dp"
+        android:layout_height="70dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <Button
+        android:id="@+id/ibuttonArm1"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+        android:id="@+id/ibuttonArm2"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+        android:id="@+id/ibuttonArm3"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+        android:id="@+id/ibuttonArm4"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+        android:id="@+id/ibuttonHand1"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004" />
+
+    <Button
+        android:id="@+id/ibuttonHand2"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004" />
+
+    <Button
+        android:id="@+id/ibuttonHand3"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004" />
+
+    <Button
+        android:id="@+id/ibuttonHand4"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004" />
+
+    <Button
+        android:id="@+id/ibuttonFeet1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90999997" />
+
+    <Button
+        android:id="@+id/ibuttonFeet2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90999997" />
+
+    <Button
+        android:id="@+id/ibuttonFeet3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90999997" />
+
+    <Button
+        android:id="@+id/ibuttonFeet4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/iClear"
+        app:layout_constraintBottom_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintEnd_toEndOf="@+id/iBodyPicImg"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90999997" />
+
+    <Button
+        android:id="@+id/ibuttonPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iPrev"
+        android:background="@color/iYellow"
+        android:onClick="prevBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintVertical_bias="0.503" />
+
+    <Button
+        android:id="@+id/ibuttonMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iMain"
+        android:background="@color/iNotActive"
+        android:onClick="mainBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iBodyPicImg" />
+
+    <Button
+        android:id="@+id/ibuttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iNext"
+        android:background="@color/iYellow"
+        android:onClick="nextBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iBodyPicImg"
+        app:layout_constraintVertical_bias="0.503" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

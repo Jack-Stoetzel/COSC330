@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itableLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:stretchColumns="0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14"
-    tools:context=".CrosswordActivity">
+    tools:context=".WordSearchActivity">
 
 
     <TableRow
@@ -17,9 +18,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="U"
             android:textSize="20sp" />
 
         <TextView
@@ -27,9 +28,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="D"
             android:textSize="20sp" />
 
         <TextView
@@ -37,9 +38,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="C"
             android:textSize="20sp" />
 
         <TextView
@@ -47,9 +48,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="G"
             android:textSize="20sp" />
 
         <TextView
@@ -57,9 +58,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="I"
             android:textSize="20sp" />
 
         <TextView
@@ -67,9 +68,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="E"
             android:textSize="20sp" />
 
         <TextView
@@ -77,9 +78,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="J"
             android:textSize="20sp" />
 
         <TextView
@@ -87,9 +88,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="A"
             android:textSize="20sp" />
 
         <TextView
@@ -97,9 +98,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="Z"
             android:textSize="20sp" />
 
         <TextView
@@ -107,9 +108,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="V"
             android:textSize="20sp" />
 
         <TextView
@@ -117,9 +118,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="A"
             android:textSize="20sp" />
 
         <TextView
@@ -127,9 +128,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="N"
             android:textSize="20sp" />
 
         <TextView
@@ -137,9 +138,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="C"
             android:textSize="20sp" />
 
         <TextView
@@ -147,9 +148,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="I"
             android:textSize="20sp" />
 
         <TextView
@@ -157,9 +158,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="G"
             android:textSize="20sp" />
     </TableRow>
 
@@ -173,9 +174,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="R"
             android:textSize="20sp" />
 
         <TextView
@@ -183,9 +184,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="F"
             android:textSize="20sp" />
 
         <TextView
@@ -195,7 +196,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text="1"
+            android:text="K"
             android:textSize="20sp" />
 
         <TextView
@@ -203,9 +204,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="K"
             android:textSize="20sp" />
 
         <TextView
@@ -213,9 +214,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="T"
             android:textSize="20sp" />
 
         <TextView
@@ -223,9 +224,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="U"
             android:textSize="20sp" />
 
         <TextView
@@ -233,9 +234,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="B"
             android:textSize="20sp" />
 
         <TextView
@@ -243,9 +244,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="D"
             android:textSize="20sp" />
 
         <TextView
@@ -253,9 +254,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="M"
             android:textSize="20sp" />
 
         <TextView
@@ -263,9 +264,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="L"
             android:textSize="20sp" />
 
         <TextView
@@ -273,9 +274,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="S"
             android:textSize="20sp" />
 
         <TextView
@@ -283,9 +284,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="I"
             android:textSize="20sp" />
 
         <TextView
@@ -293,9 +294,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="D"
             android:textSize="20sp" />
 
         <TextView
@@ -303,9 +304,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="P"
             android:textSize="20sp" />
 
         <TextView
@@ -313,9 +314,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="X"
             android:textSize="20sp" />
     </TableRow>
 
@@ -329,9 +330,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="Q"
             android:textSize="20sp" />
 
         <TextView
@@ -339,9 +340,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="B"
             android:textSize="20sp" />
 
         <TextView
@@ -351,7 +352,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="S"
             android:textSize="20sp" />
 
         <TextView
@@ -359,9 +360,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="U"
             android:textSize="20sp" />
 
         <TextView
@@ -369,9 +370,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="R"
             android:textSize="20sp" />
 
         <TextView
@@ -379,9 +380,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="Y"
             android:textSize="20sp" />
 
         <TextView
@@ -389,9 +390,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="C"
             android:textSize="20sp" />
 
         <TextView
@@ -399,9 +400,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="V"
             android:textSize="20sp" />
 
         <TextView
@@ -409,9 +410,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="I"
             android:textSize="20sp" />
 
         <TextView
@@ -419,9 +420,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="C"
             android:textSize="20sp" />
 
         <TextView
@@ -429,9 +430,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="V"
             android:textSize="20sp" />
 
         <TextView
@@ -439,9 +440,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="N"
             android:textSize="20sp" />
 
         <TextView
@@ -451,7 +452,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text="2"
+            android:text="E"
             android:textSize="20sp" />
 
         <TextView
@@ -459,9 +460,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="D"
             android:textSize="20sp" />
 
         <TextView
@@ -469,9 +470,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="I"
             android:textSize="20sp" />
     </TableRow>
 
@@ -485,9 +486,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="G"
             android:textSize="20sp" />
 
         <TextView
@@ -495,9 +496,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="R"
             android:textSize="20sp" />
 
         <TextView
@@ -507,7 +508,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="P"
             android:textSize="20sp" />
 
         <TextView
@@ -515,9 +516,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="Y"
             android:textSize="20sp" />
 
         <TextView
@@ -525,9 +526,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="C"
             android:textSize="20sp" />
 
         <TextView
@@ -535,9 +536,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="Z"
             android:textSize="20sp" />
 
         <TextView
@@ -545,9 +546,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="I"
             android:textSize="20sp" />
 
         <TextView
@@ -555,9 +556,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="K"
             android:textSize="20sp" />
 
         <TextView
@@ -565,9 +566,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="T"
             android:textSize="20sp" />
 
         <TextView
@@ -575,9 +576,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="K"
             android:textSize="20sp" />
 
         <TextView
@@ -587,7 +588,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text="3"
+            android:text="O"
             android:textSize="20sp" />
 
         <TextView
@@ -595,9 +596,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="T"
             android:textSize="20sp" />
 
         <TextView
@@ -607,7 +608,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="G"
             android:textSize="20sp" />
 
         <TextView
@@ -615,9 +616,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="V"
             android:textSize="20sp" />
 
         <TextView
@@ -625,9 +626,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="G"
             android:textSize="20sp" />
     </TableRow>
 
@@ -641,9 +642,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="J"
             android:textSize="20sp" />
 
         <TextView
@@ -653,7 +654,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text="4"
+            android:text="E"
             android:textSize="20sp" />
 
         <TextView
@@ -663,7 +664,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="E"
             android:textSize="20sp" />
 
         <TextView
@@ -673,7 +674,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="A"
             android:textSize="20sp" />
 
         <TextView
@@ -683,7 +684,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="O"
             android:textSize="20sp" />
 
         <TextView
@@ -693,7 +694,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text="5"
+            android:text="W"
             android:textSize="20sp" />
 
         <TextView
@@ -703,7 +704,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="U"
             android:textSize="20sp" />
 
         <TextView
@@ -713,7 +714,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="R"
             android:textSize="20sp" />
 
         <TextView
@@ -723,7 +724,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="I"
             android:textSize="20sp" />
 
         <TextView
@@ -733,7 +734,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="V"
             android:textSize="20sp" />
 
         <TextView
@@ -743,7 +744,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="W"
             android:textSize="20sp" />
 
         <TextView
@@ -753,7 +754,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="E"
             android:textSize="20sp" />
 
         <TextView
@@ -763,7 +764,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="E"
             android:textSize="20sp" />
 
         <TextView
@@ -773,7 +774,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="P"
             android:textSize="20sp" />
 
         <TextView
@@ -781,9 +782,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="N"
             android:textSize="20sp" />
     </TableRow>
 
@@ -797,9 +798,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="D"
             android:textSize="20sp" />
 
         <TextView
@@ -807,9 +808,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="A"
             android:textSize="20sp" />
 
         <TextView
@@ -819,7 +820,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="I"
             android:textSize="20sp" />
 
         <TextView
@@ -827,9 +828,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="H"
             android:textSize="20sp" />
 
         <TextView
@@ -837,9 +838,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="U"
             android:textSize="20sp" />
 
         <TextView
@@ -849,7 +850,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="R"
             android:textSize="20sp" />
 
         <TextView
@@ -857,9 +858,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="O"
             android:textSize="20sp" />
 
         <TextView
@@ -867,9 +868,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="O"
             android:textSize="20sp" />
 
         <TextView
@@ -877,9 +878,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="N"
             android:textSize="20sp" />
 
         <TextView
@@ -887,9 +888,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="G"
             android:textSize="20sp" />
 
         <TextView
@@ -899,7 +900,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="M"
             android:textSize="20sp" />
 
         <TextView
@@ -907,9 +908,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="R"
             android:textSize="20sp" />
 
         <TextView
@@ -919,7 +920,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="M"
             android:textSize="20sp" />
 
         <TextView
@@ -927,9 +928,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="A"
             android:textSize="20sp" />
 
         <TextView
@@ -937,9 +938,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="F"
             android:textSize="20sp" />
     </TableRow>
 
@@ -953,9 +954,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="F"
             android:textSize="20sp" />
 
         <TextView
@@ -963,9 +964,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="T"
             android:textSize="20sp" />
 
         <TextView
@@ -975,7 +976,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="P"
             android:textSize="20sp" />
 
         <TextView
@@ -983,9 +984,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="Z"
             android:textSize="20sp" />
 
         <TextView
@@ -993,9 +994,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="G"
             android:textSize="20sp" />
 
         <TextView
@@ -1005,7 +1006,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="D"
             android:textSize="20sp" />
 
         <TextView
@@ -1013,9 +1014,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="F"
             android:textSize="20sp" />
 
         <TextView
@@ -1025,7 +1026,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text="6"
+            android:text="C"
             android:textSize="20sp" />
 
         <TextView
@@ -1033,9 +1034,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="S"
             android:textSize="20sp" />
 
         <TextView
@@ -1043,9 +1044,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="K"
             android:textSize="20sp" />
 
         <TextView
@@ -1055,7 +1056,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="P"
             android:textSize="20sp" />
 
         <TextView
@@ -1063,9 +1064,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="P"
             android:textSize="20sp" />
 
         <TextView
@@ -1075,7 +1076,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="E"
             android:textSize="20sp" />
 
         <TextView
@@ -1083,9 +1084,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="T"
             android:textSize="20sp" />
 
         <TextView
@@ -1093,9 +1094,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="N"
             android:textSize="20sp" />
     </TableRow>
 
@@ -1109,9 +1110,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="P"
             android:textSize="20sp" />
 
         <TextView
@@ -1119,9 +1120,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="H"
             android:textSize="20sp" />
 
         <TextView
@@ -1131,7 +1132,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="N"
             android:textSize="20sp" />
 
         <TextView
@@ -1139,9 +1140,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="C"
             android:textSize="20sp" />
 
         <TextView
@@ -1149,9 +1150,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="H"
             android:textSize="20sp" />
 
         <TextView
@@ -1161,7 +1162,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="E"
             android:textSize="20sp" />
 
         <TextView
@@ -1169,9 +1170,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="C"
             android:textSize="20sp" />
 
         <TextView
@@ -1181,7 +1182,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="K"
             android:textSize="20sp" />
 
         <TextView
@@ -1189,9 +1190,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="U"
             android:textSize="20sp" />
 
         <TextView
@@ -1201,7 +1202,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text="7"
+            android:text="P"
             android:textSize="20sp" />
 
         <TextView
@@ -1211,7 +1212,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="L"
             android:textSize="20sp" />
 
         <TextView
@@ -1221,7 +1222,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="R"
             android:textSize="20sp" />
 
         <TextView
@@ -1231,7 +1232,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="R"
             android:textSize="20sp" />
 
         <TextView
@@ -1241,7 +1242,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="I"
             android:textSize="20sp" />
 
         <TextView
@@ -1249,9 +1250,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="J"
             android:textSize="20sp" />
     </TableRow>
 
@@ -1265,9 +1266,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="E"
             android:textSize="20sp" />
 
         <TextView
@@ -1275,9 +1276,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="E"
             android:textSize="20sp" />
 
         <TextView
@@ -1287,7 +1288,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="G"
             android:textSize="20sp" />
 
         <TextView
@@ -1295,9 +1296,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="R"
             android:textSize="20sp" />
 
         <TextView
@@ -1305,9 +1306,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="K"
             android:textSize="20sp" />
 
         <TextView
@@ -1317,7 +1318,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="F"
             android:textSize="20sp" />
 
         <TextView
@@ -1325,9 +1326,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="A"
             android:textSize="20sp" />
 
         <TextView
@@ -1337,7 +1338,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="R"
             android:textSize="20sp" />
 
         <TextView
@@ -1345,9 +1346,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="R"
             android:textSize="20sp" />
 
         <TextView
@@ -1355,9 +1356,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="H"
             android:textSize="20sp" />
 
         <TextView
@@ -1367,7 +1368,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="R"
             android:textSize="20sp" />
 
         <TextView
@@ -1375,9 +1376,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="E"
             android:textSize="20sp" />
 
         <TextView
@@ -1387,7 +1388,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="G"
             android:textSize="20sp" />
 
         <TextView
@@ -1395,9 +1396,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="E"
             android:textSize="20sp" />
 
         <TextView
@@ -1405,9 +1406,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="G"
             android:textSize="20sp" />
     </TableRow>
 
@@ -1421,9 +1422,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="V"
             android:textSize="20sp" />
 
         <TextView
@@ -1431,9 +1432,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="X"
             android:textSize="20sp" />
 
         <TextView
@@ -1441,9 +1442,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="T"
             android:textSize="20sp" />
 
         <TextView
@@ -1451,9 +1452,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="B"
             android:textSize="20sp" />
 
         <TextView
@@ -1461,9 +1462,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="D"
             android:textSize="20sp" />
 
         <TextView
@@ -1471,9 +1472,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="C"
             android:textSize="20sp" />
 
         <TextView
@@ -1483,7 +1484,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text="8"
+            android:text="O"
             android:textSize="20sp" />
 
         <TextView
@@ -1493,7 +1494,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="P"
             android:textSize="20sp" />
 
         <TextView
@@ -1503,7 +1504,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="A"
             android:textSize="20sp" />
 
         <TextView
@@ -1513,7 +1514,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="Y"
             android:textSize="20sp" />
 
         <TextView
@@ -1523,7 +1524,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="P"
             android:textSize="20sp" />
 
         <TextView
@@ -1533,7 +1534,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="T"
             android:textSize="20sp" />
 
         <TextView
@@ -1543,7 +1544,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="E"
             android:textSize="20sp" />
 
         <TextView
@@ -1553,7 +1554,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="N"
             android:textSize="20sp" />
 
         <TextView
@@ -1561,9 +1562,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="Q"
             android:textSize="20sp" />
     </TableRow>
 
@@ -1577,9 +1578,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="D"
             android:textSize="20sp" />
 
         <TextView
@@ -1587,9 +1588,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="V"
             android:textSize="20sp" />
 
         <TextView
@@ -1597,9 +1598,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="U"
             android:textSize="20sp" />
 
         <TextView
@@ -1607,9 +1608,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="A"
             android:textSize="20sp" />
 
         <TextView
@@ -1617,9 +1618,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="P"
             android:textSize="20sp" />
 
         <TextView
@@ -1627,9 +1628,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="P"
             android:textSize="20sp" />
 
         <TextView
@@ -1637,9 +1638,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="O"
             android:textSize="20sp" />
 
         <TextView
@@ -1649,7 +1650,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="I"
             android:textSize="20sp" />
 
         <TextView
@@ -1657,9 +1658,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="N"
             android:textSize="20sp" />
 
         <TextView
@@ -1667,9 +1668,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="T"
             android:textSize="20sp" />
 
         <TextView
@@ -1679,7 +1680,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="M"
             android:textSize="20sp" />
 
         <TextView
@@ -1687,9 +1688,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="E"
             android:textSize="20sp" />
 
         <TextView
@@ -1697,9 +1698,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="N"
             android:textSize="20sp" />
 
         <TextView
@@ -1707,9 +1708,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="T"
             android:textSize="20sp" />
 
         <TextView
@@ -1717,9 +1718,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="J"
             android:textSize="20sp" />
     </TableRow>
 
@@ -1733,9 +1734,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="X"
             android:textSize="20sp" />
 
         <TextView
@@ -1743,9 +1744,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="F"
             android:textSize="20sp" />
 
         <TextView
@@ -1753,9 +1754,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="Z"
             android:textSize="20sp" />
 
         <TextView
@@ -1763,9 +1764,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="L"
             android:textSize="20sp" />
 
         <TextView
@@ -1773,9 +1774,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="U"
             android:textSize="20sp" />
 
         <TextView
@@ -1783,9 +1784,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="O"
             android:textSize="20sp" />
 
         <TextView
@@ -1793,9 +1794,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="Y"
             android:textSize="20sp" />
 
         <TextView
@@ -1805,7 +1806,7 @@
             android:layout_weight="1"
             android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="G"
             android:textSize="20sp" />
 
         <TextView
@@ -1813,9 +1814,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="C"
             android:textSize="20sp" />
 
         <TextView
@@ -1823,9 +1824,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="Y"
             android:textSize="20sp" />
 
         <TextView
@@ -1833,9 +1834,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="D"
             android:textSize="20sp" />
 
         <TextView
@@ -1843,9 +1844,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="R"
             android:textSize="20sp" />
 
         <TextView
@@ -1853,9 +1854,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="C"
             android:textSize="20sp" />
 
         <TextView
@@ -1863,9 +1864,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="N"
             android:textSize="20sp" />
 
         <TextView
@@ -1873,9 +1874,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="E"
             android:textSize="20sp" />
     </TableRow>
 
@@ -1889,9 +1890,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="V"
             android:textSize="20sp" />
 
         <TextView
@@ -1899,9 +1900,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="X"
             android:textSize="20sp" />
 
         <TextView
@@ -1909,9 +1910,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="K"
             android:textSize="20sp" />
 
         <TextView
@@ -1919,9 +1920,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="V"
             android:textSize="20sp" />
 
         <TextView
@@ -1929,9 +1930,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="P"
             android:textSize="20sp" />
 
         <TextView
@@ -1939,9 +1940,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="R"
             android:textSize="20sp" />
 
         <TextView
@@ -1949,9 +1950,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="N"
             android:textSize="20sp" />
 
         <TextView
@@ -1959,9 +1960,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="W"
             android:textSize="20sp" />
 
         <TextView
@@ -1969,9 +1970,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="E"
             android:textSize="20sp" />
 
         <TextView
@@ -1979,9 +1980,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="N"
             android:textSize="20sp" />
 
         <TextView
@@ -1989,9 +1990,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="L"
             android:textSize="20sp" />
 
         <TextView
@@ -1999,9 +2000,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="P"
             android:textSize="20sp" />
 
         <TextView
@@ -2009,9 +2010,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="Y"
             android:textSize="20sp" />
 
         <TextView
@@ -2019,9 +2020,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="O"
             android:textSize="20sp" />
 
         <TextView
@@ -2029,9 +2030,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/iborder1"
+            android:background="@drawable/iborder2"
             android:gravity="center"
-            android:text=" "
+            android:text="O"
             android:textSize="20sp" />
     </TableRow>
 
@@ -2039,131 +2040,116 @@
         android:layout_width="wrap_content"
         android:layout_height="fill_parent">
 
-        <Button
-            android:id="@+id/iButtonAcross"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:contentDescription="@string/iAcrossCP"
-            android:text="@string/iAcrossCP"
-            android:onClick="acrossBtn"
-            android:background="@color/iActive"/>
 
-        <Button
-            android:id="@+id/iButtonDown"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_toRightOf="@id/iButtonAcross"
-            android:contentDescription="@string/iDownCP"
-            android:text="@string/iDownCP"
-            android:onClick="downBtn"
-            android:background="@color/iNotActive"/>
         <Button
             android:id="@+id/iButtonReset"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_toRightOf="@id/iButtonDown"
             android:contentDescription="@string/iReset"
             android:text="@string/iReset"
             android:onClick="resetBtn"
             android:background="@color/iReset"
             />
         <Button
+            android:id="@+id/iButtonClearSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/iButtonReset"
+            android:contentDescription="@string/iClrSel"
+            android:text="@string/iClrSel"
+            android:onClick="clearSelection"
+            android:background="@color/iNotActive"
+            />
+        <Button
             android:id="@+id/iButtonWS"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:layout_toRightOf="@id/iButtonReset"
-            android:contentDescription="@string/iWordSearch"
-            android:text="@string/iWordSearch"
-            android:onClick="toWordSearchBtn"
+            android:layout_toRightOf="@id/iButtonClearSelect"
+            android:contentDescription="@string/iCrossWord"
+            android:text="@string/iCrossWord"
+            android:onClick="toCrossWordBtn"
             android:background="@color/iWordSearch"
             />
-        <ImageView
-            android:id="@+id/iimageView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/cpacrossqs"
-            android:adjustViewBounds="true"
-            android:visibility="visible"
-            android:layout_below="@id/iButtonAcross"/>
-        <ImageView
-            android:id="@+id/iimageView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/cpdownqs"
-            android:adjustViewBounds="true"
-            android:visibility="invisible"
-            android:layout_below="@id/iButtonAcross"/>
+
 
         <TextView
-            android:id="@+id/itextViewDiabetes"
+            android:id="@+id/itextViewAppointment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:textSize="20sp"
-            android:text="@string/iDiabetes"
-            android:layout_below="@id/iimageView2"/>
+            android:text="@string/iAppointment"
+            android:layout_below="@id/iButtonReset"/>
         <TextView
-            android:id="@+id/itextViewCalories"
+            android:id="@+id/itextViewBreathe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:textSize="20sp"
-            android:text="@string/iCalories"
-            android:layout_below="@id/itextViewDiabetes"/>
+            android:text="@string/iBreathe"
+            android:layout_below="@id/itextViewAppointment"/>
         <TextView
-            android:id="@+id/itextViewSodium"
+            android:id="@+id/itextViewCheckup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:textSize="20sp"
-            android:text="@string/iSodium"
-            android:layout_below="@id/iimageView2"
-            android:layout_toRightOf="@id/itextViewDiabetes"/>
+            android:text="@string/iCheckup"
+            android:layout_below="@id/itextViewBreathe"/>
         <TextView
-            android:id="@+id/itextViewVitamins"
+            android:id="@+id/itextViewCopay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:textSize="20sp"
-            android:text="@string/iVitamins"
-            android:layout_below="@id/itextViewSodium"
-            android:layout_toRightOf="@id/itextViewDiabetes"/>
+            android:text="@string/iCopay"
+            android:layout_below="@id/iButtonReset"
+            android:layout_toRightOf="@id/itextViewAppointment"/>
         <TextView
-            android:id="@+id/itextViewFruit"
+            android:id="@+id/itextViewCough"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:textSize="20sp"
-            android:text="@string/iFruit"
-            android:layout_below="@id/iimageView2"
-            android:layout_toRightOf="@id/itextViewVitamins"/>
+            android:text="@string/iCough"
+            android:layout_below="@id/itextViewCopay"
+            android:layout_toRightOf="@id/itextViewAppointment"/>
         <TextView
-            android:id="@+id/itextViewObese"
+            android:id="@+id/itextViewEmergency"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:textSize="20sp"
-            android:text="@string/iObese"
-            android:layout_below="@id/itextViewFruit"
-            android:layout_toRightOf="@id/itextViewVitamins"/>
+            android:text="@string/iEmergency"
+            android:layout_below="@id/itextViewCough"
+            android:layout_toRightOf="@id/itextViewAppointment"/>
         <TextView
-            android:id="@+id/itextViewExercise"
+            android:id="@+id/itextViewInsurance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:textSize="20sp"
-            android:text="@string/iExercise"
-            android:layout_below="@id/iimageView2"
-            android:layout_toRightOf="@id/itextViewObese"/>
+            android:text="@string/iInsurance"
+            android:layout_below="@id/iButtonReset"
+            android:layout_toRightOf="@id/itextViewEmergency"/>
         <TextView
-            android:id="@+id/itextViewCarbohydrates"
+            android:id="@+id/itextViewInterpreter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:textSize="20sp"
-            android:text="@string/iCarbohydrates"
-            android:layout_below="@id/itextViewExercise"
-            android:layout_toRightOf="@id/itextViewObese"/>
+            android:text="@string/iInterpreter"
+            android:layout_below="@id/itextViewInsurance"
+            android:layout_toRightOf="@id/itextViewEmergency"/>
+        <TextView
+            android:id="@+id/itextViewPatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:text="@string/iPatient"
+            android:layout_below="@id/itextViewInterpreter"
+            android:layout_toRightOf="@id/itextViewEmergency"/>
         <TextView
             android:id="@+id/iWin"
             android:layout_width="fill_parent"
@@ -2173,9 +2159,8 @@
             android:textSize="70sp"
             android:gravity="center"
             android:visibility="invisible"
-            android:layout_below="@id/iButtonAcross"/>
+            android:layout_below="@id/iButtonReset"/>
+
 
     </RelativeLayout>
-
-
 </TableLayout>

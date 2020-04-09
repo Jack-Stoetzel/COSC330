@@ -169,5 +169,42 @@
 
     <string name="iDownCP">Down</string>
     <string name="iAcrossCP">Across</string>
+    <string name="iReset">Reset</string>
+    <string name="iClrSel">Clear Selected</string>
+    <string name="iWordSearch">Word Search</string>
+    <string name="iCrossWord">Crossword Puzzle</string>
+    <string name="iWin">You Win!</string>
+
+
+    <string name="iAppointment">Appointment</string>
+    <string name="iBreathe">Breathe</string>
+    <string name="iCheckup">Checkup</string>
+    <string name="iCopay">Copay</string>
+    <string name="iCough">Cough</string>
+    <string name="iEmergency">Emergency</string>
+    <string name="iInsurance">Insurance</string>
+    <string name="iInterpreter">Interpreter</string>
+    <string name="iPatient">Patient</string>
+
+    <string name="iHead">Head</string>
+    <string name="iShoulder">Shoulder</string>
+    <string name="iChest">Chest</string>
+    <string name="iStomach">Stomach</string>
+    <string name="iArm">Arm</string>
+    <string name="iHand">Hand</string>
+    <string name="iFeet">Feet</string>
+    <string name="iBack">Back</string>
+    <string name="iEye">Eye</string>
+    <string name="iMouth">Mouth</string>
+    <string name="iEar">Ear</string>
+    <string name="iNose">Nose</string>
+    <string name="iNeck">Neck</string>
+
+    <string name="iNext">Next</string>
+    <string name="iPrev">Previous</string>
+    <string name="iMain">Main Menu</string>
+
+    <string name="iHeadPic">Head Picture</string>
+    <string name="iBodyPic">Body Picture</string>
 
 </resources>

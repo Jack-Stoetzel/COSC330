@@ -46,6 +46,11 @@
         <item>H elth In SHER uns</item>
         <item>A program where you pay each month and then the program pays for your health care</item>
 
+        <item>Immunization</item>
+        <item>IM yoon ZA Shun</item>
+        <item>The process of becoming immune or resistant to an infectious disease, typically by getting vaccines.
+            It is good to stay up to date on these and check with your doctor on what you need</item>
+
         <item>Label</item>
         <item>LA bel</item>
         <item>On the bottle or box to describe the medicine and how to take it</item>
@@ -57,6 +62,14 @@
         <item>Medicine</item>
         <item>MED uh sin</item>
         <item>Used when you are sick or have aches and pain to help make you feel well</item>
+
+        <item>Mililiter</item>
+        <item>Mil e LEE Ter</item>
+        <item>Measurement of how much liquid medicine is needed Common abbreviation: mL</item>
+
+        <item>Nutrient</item>
+        <item>New TRISH ent</item>
+        <item>In foods and needed by people to stay healthy</item>
 
         <item>Nutrition</item>
         <item>New TRISH un</item>
@@ -106,6 +119,18 @@
         <item>SIMP tums</item>
         <item>Something that happens in the body that shows you have an injury or illness</item>
 
+        <item>Tablespoon</item>
+        <item>T A ble SPU n</item>
+        <item>Common abbreviation: Tbsp, Equals 3 teaspoons or 15 mL</item>
+
+        <item>Teaspoon</item>
+        <item>Ti SPU n</item>
+        <item>Measurement of how much liquid medicine is needed Common abbreviation: tsp Equals 5 mL</item>
+
+        <item>Vaccine</item>
+        <item>Vak seen</item>
+        <item>Provides immunity against one or several diseases</item>
+
         <item>Warning Label</item>
         <item>WAR ning LA bel</item>
         <item>Describes dangers and what NOT to do when taking medicine</item>
@@ -125,6 +150,11 @@
     </string-array>
 
     <string name="blank">Blank</string>
+    <string name="sound">Sound</string>
+    <string name="slogo">Wellness Logo</string>
+    <string name="login">Log-In</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
@@ -139,5 +169,42 @@
 
     <string name="iDownCP">Down</string>
     <string name="iAcrossCP">Across</string>
+    <string name="iReset">Reset</string>
+    <string name="iClrSel">Clear Selected</string>
+    <string name="iWordSearch">Word Search</string>
+    <string name="iCrossWord">Crossword Puzzle</string>
+    <string name="iWin">You Win!</string>
+
+
+    <string name="iAppointment">Appointment</string>
+    <string name="iBreathe">Breathe</string>
+    <string name="iCheckup">Checkup</string>
+    <string name="iCopay">Copay</string>
+    <string name="iCough">Cough</string>
+    <string name="iEmergency">Emergency</string>
+    <string name="iInsurance">Insurance</string>
+    <string name="iInterpreter">Interpreter</string>
+    <string name="iPatient">Patient</string>
+
+    <string name="iHead">Head</string>
+    <string name="iShoulder">Shoulder</string>
+    <string name="iChest">Chest</string>
+    <string name="iStomach">Stomach</string>
+    <string name="iArm">Arm</string>
+    <string name="iHand">Hand</string>
+    <string name="iFeet">Feet</string>
+    <string name="iBack">Back</string>
+    <string name="iEye">Eye</string>
+    <string name="iMouth">Mouth</string>
+    <string name="iEar">Ear</string>
+    <string name="iNose">Nose</string>
+    <string name="iNeck">Neck</string>
+
+    <string name="iNext">Next</string>
+    <string name="iPrev">Previous</string>
+    <string name="iMain">Main Menu</string>
+
+    <string name="iHeadPic">Head Picture</string>
+    <string name="iBodyPic">Body Picture</string>
 
 </resources>

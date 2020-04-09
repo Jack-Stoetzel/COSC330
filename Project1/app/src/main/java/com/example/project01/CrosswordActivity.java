@@ -1,6 +1,9 @@
 package com.example.project01;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.media.AudioManager;
+import android.media.SoundPool;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -9,12 +12,15 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.HashMap;
 
 public class CrosswordActivity extends AppCompatActivity {
 
+    //to flip between the down and across hint
     private Button across;
     private Button down;
-    private TextView textViewDiabetes;
+
+    private TextView textViewDiabetes; //allows to change the TextViews background and select them
     private TextView textViewCalories;
     private TextView textViewSodium;
     private TextView textViewVitamins;
@@ -30,25 +36,59 @@ public class CrosswordActivity extends AppCompatActivity {
     private TextView textViewNum6;
     private TextView textViewNum7;
     private TextView textViewNum8;
+    private TextView iWin; //allows us to choose when to display that they won
+    private SoundPool soundPool; //to hold the sounds
+
+    //to keep track of the box and word they have selected
     private int selectedText = -1;
     private int selectedBox = -1;
 
-    private ImageView acrossImg;
-    private ImageView downImg;
+    //hash map to allow us to check if they have correctly answered crossword
+    private HashMap<Integer, Integer> map = new HashMap<>();
 
+    private ImageView acrossImg; //holds the across hints
+    private ImageView downImg; //holds the down hints
+
+    //onCreate method
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.crossword_puzzle);
+
+        configureSounds();
         initiateWidgets();
         initiateListeners();
+        initiateMap();
     }
 
-    public void initiateWidgets() {
+    //sets every correct answer to 0 as they have not been answered yet
+    public void initiateMap()
+    {
+        map.put(R.id.itextViewDiabetes, 0);
+        map.put(R.id.itextViewCalories, 0);
+        map.put(R.id.itextViewSodium, 0);
+        map.put(R.id.itextViewVitamins, 0);
+        map.put(R.id.itextViewFruit, 0);
+        map.put(R.id.itextViewObese, 0);
+        map.put(R.id.itextViewExercise, 0);
+        map.put(R.id.itextViewCarbohydrates, 0);
+    }
+
+    //sets up the SoundPool that will be used
+    private void configureSounds()
+    {
+        soundPool = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
+        soundPool.load(this, R.raw.icorrectsound, 1);
+        soundPool.load(this, R.raw.ivictorysound, 1);
+    }
+
+    //initiates the widgets that will be used
+    private void initiateWidgets() {
         across = (Button) findViewById(R.id.iButtonAcross);
         down = (Button) findViewById(R.id.iButtonDown);
         acrossImg = (ImageView) findViewById(R.id.iimageView1);
         downImg = (ImageView) findViewById(R.id.iimageView2);
+        iWin = (TextView) findViewById(R.id.iWin);
 
         textViewDiabetes = (TextView) findViewById(R.id.itextViewDiabetes);
         textViewCalories = (TextView) findViewById(R.id.itextViewCalories);
@@ -69,7 +109,8 @@ public class CrosswordActivity extends AppCompatActivity {
         textViewNum8 = (TextView) findViewById(R.id.itextView10_7);
     }
 
-    public void initiateListeners()
+    //initiates all listeners for the TextViews
+    private void initiateListeners()
     {
         textViewDiabetes.setOnClickListener(textListener);
         textViewCalories.setOnClickListener(textListener);
@@ -90,6 +131,7 @@ public class CrosswordActivity extends AppCompatActivity {
         textViewNum8.setOnClickListener(boxNumberListener);
     }
 
+    //button action when they select the across button
     public void acrossBtn(View view) {
         downImg.setVisibility(View.INVISIBLE);
         acrossImg.setVisibility(View.VISIBLE);
@@ -98,6 +140,7 @@ public class CrosswordActivity extends AppCompatActivity {
 
     }
 
+    //button action when they select the down button
     public void downBtn(View view) {
         acrossImg.setVisibility(View.INVISIBLE);
         downImg.setVisibility(View.VISIBLE);
@@ -105,42 +148,116 @@ public class CrosswordActivity extends AppCompatActivity {
         across.setBackgroundColor(getResources().getColor(R.color.iNotActive));
     }
 
+    //resets the current game to the original state
+    public void resetBtn(View view) {
+        setContentView(R.layout.crossword_puzzle);
+
+        configureSounds();
+        initiateWidgets();
+        initiateListeners();
+        initiateMap();
+    }
+
+    //button action sends user back to word search page
+    public void toWordSearchBtn(View view){
+        Intent intent = new Intent(getApplicationContext(), WordSearchActivity.class);
+        startActivity(intent);
+    }
+
+    //listener meant for text that gets selected at the bottom
+    // set colors and changes the selectedText value to the correct TextView
     private View.OnClickListener textListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if(selectedText != -1 && findViewById(selectedText).getSolidColor() != getResources().getColor(R.color.iCorrect))
+            if(selectedText != -1)
             {
                 findViewById(selectedText).setBackgroundColor(0x00000000);
             }
-            v.setBackgroundColor(getResources().getColor(R.color.iSelected));
+
             selectedText=v.getId();
 
             if(selectedText != -1 && selectedBox != -1)
             {
                 checkSelectedCorrect();
             }
+
+            fillInColors();
+            v.setBackgroundColor(getResources().getColor(R.color.iSelected));
         }
     };
 
+    //listener meant for boxes that gets selected in the crossword puzzle
+    // set colors and changes the selectedText value to the correct TextView
     private View.OnClickListener boxNumberListener = new View.OnClickListener(){
         @Override
         public void onClick(View v){
-            if(selectedBox != -1 && findViewById(selectedBox).getSolidColor() != getResources().getColor(R.color.iCorrect))
+            if(selectedBox != -1)
             {
-                findViewById(selectedBox).setBackgroundColor(0x00000000);
+                findViewById(selectedBox).setBackgroundDrawable(getResources().getDrawable(R.drawable.iborder2));
             }
-            v.setBackgroundColor(getResources().getColor(R.color.iSelected));
+
             selectedBox=v.getId();
+
             if(selectedText != -1 && selectedBox != -1)
             {
                 checkSelectedCorrect();
             }
+
+            fillInColors();
+            v.setBackgroundColor(getResources().getColor(R.color.iSelected));
         }
     };
 
-    public void checkSelectedCorrect()
+    //sets whether the correct answer was inputted, so that fillInColors() works
+    private void checkSelectedCorrect()
     {
-        if(selectedText == textViewVitamins.getId() && selectedBox == textViewNum1.getId())
+        if(map.get(R.id.itextViewVitamins) != 1 && selectedText == textViewVitamins.getId() && selectedBox == textViewNum1.getId())
+        {
+            map.put(R.id.itextViewVitamins, 1);
+            soundPool.play(1,1,1,1,0,1.0f);
+        }
+        else if(map.get(R.id.itextViewExercise) != 1 && selectedText == textViewExercise.getId() && selectedBox == textViewNum2.getId())
+        {
+            map.put(R.id.itextViewExercise, 1);
+            soundPool.play(1,1,1,1,0,1.0f);
+        }
+        else if(map.get(R.id.itextViewCalories) != 1 && selectedText == textViewCalories.getId() && selectedBox == textViewNum3.getId())
+        {
+            map.put(R.id.itextViewCalories, 1);
+            soundPool.play(1,1,1,1,0,1.0f);
+        }
+        else if(map.get(R.id.itextViewCarbohydrates) != 1 && selectedText == textViewCarbohydrates.getId() && selectedBox == textViewNum4.getId())
+        {
+            map.put(R.id.itextViewCarbohydrates, 1);
+            soundPool.play(1,1,1,1,0,1.0f);
+        }
+        else if(map.get(R.id.itextViewObese) != 1 && selectedText == textViewObese.getId() && selectedBox == textViewNum5.getId())
+        {
+            map.put(R.id.itextViewObese, 1);
+            soundPool.play(1,1,1,1,0,1.0f);
+        }
+        else if(map.get(R.id.itextViewSodium) != 1 && selectedText == textViewSodium.getId() && selectedBox == textViewNum6.getId())
+        {
+            map.put(R.id.itextViewSodium, 1);
+            soundPool.play(1,1,1,1,0,1.0f);
+        }
+        else if(map.get(R.id.itextViewFruit) != 1 && selectedText == textViewFruit.getId() && selectedBox == textViewNum7.getId())
+        {
+            map.put(R.id.itextViewFruit, 1);
+            soundPool.play(1,1,1,1,0,1.0f);
+        }
+        else if(map.get(R.id.itextViewDiabetes) != 1 && selectedText == textViewDiabetes.getId() && selectedBox == textViewNum8.getId())
+        {
+            map.put(R.id.itextViewDiabetes, 1);
+            soundPool.play(1,1,1,1,0,1.0f);
+        }
+        hasWon();
+    }
+
+    //fills in the colors for each box and their text value
+    private void fillInColors()
+    {
+        if(map.get(R.id.itextViewVitamins) == 1)
         {
             textViewVitamins.setBackgroundColor(getResources().getColor(R.color.iCorrect));
             ((TextView)findViewById(R.id.itextView2_3)).setText("V");
@@ -160,7 +277,7 @@ public class CrosswordActivity extends AppCompatActivity {
             ((TextView)findViewById(R.id.itextView9_3)).setText("S");
             findViewById(R.id.itextView9_3).setBackgroundColor(getResources().getColor(R.color.iCorrect));
         }
-        else if(selectedText == textViewExercise.getId() && selectedBox == textViewNum2.getId())
+        if(map.get(R.id.itextViewExercise) == 1)
         {
             textViewExercise.setBackgroundColor(getResources().getColor(R.color.iCorrect));
             ((TextView)findViewById(R.id.itextView3_13)).setText("E");
@@ -180,7 +297,7 @@ public class CrosswordActivity extends AppCompatActivity {
             ((TextView)findViewById(R.id.itextView10_13)).setText("E");
             findViewById(R.id.itextView10_13).setBackgroundColor(getResources().getColor(R.color.iCorrect));
         }
-        else if(selectedText == textViewCalories.getId() && selectedBox == textViewNum3.getId())
+        if(map.get(R.id.itextViewCalories) == 1)
         {
             textViewCalories.setBackgroundColor(getResources().getColor(R.color.iCorrect));
             ((TextView)findViewById(R.id.itextView4_11)).setText("C");
@@ -200,7 +317,7 @@ public class CrosswordActivity extends AppCompatActivity {
             ((TextView)findViewById(R.id.itextView11_11)).setText("S");
             findViewById(R.id.itextView11_11).setBackgroundColor(getResources().getColor(R.color.iCorrect));
         }
-        else if(selectedText == textViewCarbohydrates.getId() && selectedBox == textViewNum4.getId())
+        if(map.get(R.id.itextViewCarbohydrates) == 1)
         {
             textViewCarbohydrates.setBackgroundColor(getResources().getColor(R.color.iCorrect));
             ((TextView)findViewById(R.id.itextView5_2)).setText("C");
@@ -230,7 +347,7 @@ public class CrosswordActivity extends AppCompatActivity {
             ((TextView)findViewById(R.id.itextView5_14)).setText("S");
             findViewById(R.id.itextView5_14).setBackgroundColor(getResources().getColor(R.color.iCorrect));
         }
-        else if(selectedText == textViewObese.getId() && selectedBox == textViewNum5.getId())
+        if(map.get(R.id.itextViewObese) == 1)
         {
             textViewObese.setBackgroundColor(getResources().getColor(R.color.iCorrect));
             ((TextView)findViewById(R.id.itextView5_6)).setText("O");
@@ -244,9 +361,9 @@ public class CrosswordActivity extends AppCompatActivity {
             ((TextView)findViewById(R.id.itextView9_6)).setText("E");
             findViewById(R.id.itextView9_6).setBackgroundColor(getResources().getColor(R.color.iCorrect));
         }
-        else if(selectedText == textViewSodium.getId() && selectedBox == textViewNum6.getId())
+        if(map.get(R.id.itextViewSodium) == 1)
         {
-            textViewCalories.setBackgroundColor(getResources().getColor(R.color.iCorrect));
+            textViewSodium.setBackgroundColor(getResources().getColor(R.color.iCorrect));
             ((TextView)findViewById(R.id.itextView7_8)).setText("S");
             findViewById(R.id.itextView7_8).setBackgroundColor(getResources().getColor(R.color.iCorrect));
             ((TextView)findViewById(R.id.itextView8_8)).setText("O");
@@ -260,7 +377,7 @@ public class CrosswordActivity extends AppCompatActivity {
             ((TextView)findViewById(R.id.itextView12_8)).setText("M");
             findViewById(R.id.itextView12_8).setBackgroundColor(getResources().getColor(R.color.iCorrect));
         }
-        else if(selectedText == textViewFruit.getId() && selectedBox == textViewNum7.getId())
+        if(map.get(R.id.itextViewFruit) == 1)
         {
             textViewFruit.setBackgroundColor(getResources().getColor(R.color.iCorrect));
             ((TextView)findViewById(R.id.itextView8_10)).setText("F");
@@ -274,7 +391,7 @@ public class CrosswordActivity extends AppCompatActivity {
             ((TextView)findViewById(R.id.itextView8_14)).setText("T");
             findViewById(R.id.itextView8_14).setBackgroundColor(getResources().getColor(R.color.iCorrect));
         }
-        else if(selectedText == textViewDiabetes.getId() && selectedBox == textViewNum8.getId())
+        if(map.get(R.id.itextViewDiabetes) == 1)
         {
             textViewDiabetes.setBackgroundColor(getResources().getColor(R.color.iCorrect));
             ((TextView)findViewById(R.id.itextView10_7)).setText("D");
@@ -293,7 +410,20 @@ public class CrosswordActivity extends AppCompatActivity {
             findViewById(R.id.itextView10_13).setBackgroundColor(getResources().getColor(R.color.iCorrect));
             ((TextView)findViewById(R.id.itextView10_14)).setText("S");
             findViewById(R.id.itextView10_14).setBackgroundColor(getResources().getColor(R.color.iCorrect));
+        }
+    }
 
+    //checks if they have won yet
+    private void hasWon()
+    {
+        if(map.get(R.id.itextViewVitamins) == 1 && map.get(R.id.itextViewExercise) == 1 &&
+                map.get(R.id.itextViewCalories) == 1 &&map.get(R.id.itextViewCarbohydrates) == 1 &&
+                map.get(R.id.itextViewObese) == 1 && map.get(R.id.itextViewSodium) == 1 &&
+                map.get(R.id.itextViewFruit) == 1 && map.get(R.id.itextViewDiabetes) == 1 &&
+                iWin.getVisibility() != View.VISIBLE)
+        {
+            iWin.setVisibility(View.VISIBLE);
+            soundPool.play(2,1,1,1,0,1.0f);
         }
     }
 }

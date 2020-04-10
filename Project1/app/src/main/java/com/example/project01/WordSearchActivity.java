@@ -88,18 +88,18 @@ public class WordSearchActivity extends Activity {
     //initiates the widgets that will be used
     private void initiateWidgets() {
 
-        table = (TableLayout) findViewById(R.id.itableLayout1);
-        iWin = (TextView) findViewById(R.id.iWin);
+        table = findViewById(R.id.itableLayout1);
+        iWin = findViewById(R.id.iWin);
 
-        textViewAppointment = (TextView) findViewById(R.id.itextViewAppointment);
-        textViewBreathe = (TextView) findViewById(R.id.itextViewBreathe);
-        textViewCheckup = (TextView) findViewById(R.id.itextViewCheckup);
-        textViewCopay = (TextView) findViewById(R.id.itextViewCopay);
-        textViewCough = (TextView) findViewById(R.id.itextViewCough);
-        textViewEmergency = (TextView) findViewById(R.id.itextViewEmergency);
-        textViewInsurance = (TextView) findViewById(R.id.itextViewInsurance);
-        textViewInterpreter = (TextView) findViewById(R.id.itextViewInterpreter);
-        textViewPatient = (TextView) findViewById(R.id.itextViewPatient);
+        textViewAppointment = findViewById(R.id.itextViewAppointment);
+        textViewBreathe = findViewById(R.id.itextViewBreathe);
+        textViewCheckup = findViewById(R.id.itextViewCheckup);
+        textViewCopay = findViewById(R.id.itextViewCopay);
+        textViewCough = findViewById(R.id.itextViewCough);
+        textViewEmergency = findViewById(R.id.itextViewEmergency);
+        textViewInsurance = findViewById(R.id.itextViewInsurance);
+        textViewInterpreter = findViewById(R.id.itextViewInterpreter);
+        textViewPatient = findViewById(R.id.itextViewPatient);
     }
 
     //initiates all TextView boxes with a listener
@@ -109,7 +109,7 @@ public class WordSearchActivity extends Activity {
         {
             for(int j = 0; j < 15; j++)
             {
-                ((TextView)((TableRow)table.getChildAt(i)).getChildAt(j)).setOnClickListener(boxNumberListener);
+                (((TableRow)table.getChildAt(i)).getChildAt(j)).setOnClickListener(boxNumberListener);
             }
         }
     }
@@ -134,10 +134,9 @@ public class WordSearchActivity extends Activity {
     public void clearSelection(View view)
     {
         Integer[] selectKeys = mapSelected.keySet().toArray(new Integer[mapSelected.size()]);
-        for(int i = 0; i < selectKeys.length; i++)
-        {
-            findViewById(selectKeys[i]).setBackgroundDrawable(getResources().getDrawable(R.drawable.iborder2));
-            mapSelected.remove(selectKeys[i]);
+        for (Integer selectKey : selectKeys) {
+            findViewById(selectKey).setBackgroundDrawable(getResources().getDrawable(R.drawable.iborder2));
+            mapSelected.remove(selectKey);
         }
         fillInColors();
     }
@@ -163,10 +162,8 @@ public class WordSearchActivity extends Activity {
         {
             return false;
         }
-        for(int i = 0; i < keys.length; i++)
-        {
-            if(!mapSelected.containsKey(keys[i]))
-            {
+        for (int key : keys) {
+            if (!mapSelected.containsKey(key)) {
                 return false;
             }
         }
@@ -178,9 +175,8 @@ public class WordSearchActivity extends Activity {
     public void clearSelectionCorrect()
     {
         Integer[] selectKeys = mapSelected.keySet().toArray(new Integer[mapSelected.size()]);
-        for(int i = 0; i < selectKeys.length; i++)
-        {
-            mapSelected.remove(selectKeys[i]);
+        for (Integer selectKey : selectKeys) {
+            mapSelected.remove(selectKey);
         }
     }
 
@@ -230,9 +226,8 @@ public class WordSearchActivity extends Activity {
     private void fillInSelected()
     {
         Integer[] selectKeys = mapSelected.keySet().toArray(new Integer[mapSelected.size()]);
-        for(int i = 0; i < selectKeys.length; i++)
-        {
-            findViewById(selectKeys[i]).setBackgroundDrawable(getResources().getDrawable(R.color.iSelected));
+        for (Integer selectKey : selectKeys) {
+            findViewById(selectKey).setBackgroundDrawable(getResources().getDrawable(R.color.iSelected));
         }
     }
 

@@ -1,8 +1,6 @@
 package com.example.project01;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.view.View;
@@ -52,7 +50,7 @@ public class WordDisplay extends AppCompatActivity {
             @Override
             public void onInit(int status) {
                 if(status != TextToSpeech.ERROR) {
-                    speaker.setLanguage(Locale.ROOT);
+                    speaker.setLanguage(Locale.CHINA);
                     // Locale:
                     // CANADA, CANADA_FRENCH, CHINA, FRANCE, GERMANY, ITALY, JAPAN, KOREA, PRC, ROOT(?), TAIWAN, UK, US
                 }

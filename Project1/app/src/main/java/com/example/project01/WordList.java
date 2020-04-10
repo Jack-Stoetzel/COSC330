@@ -2,19 +2,12 @@ package com.example.project01;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.LauncherActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.ContextMenu;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-
-import java.util.ArrayList;
 
 public class WordList extends AppCompatActivity {
 

@@ -1,6 +1,5 @@
 package com.example.project01;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.media.SoundPool;
@@ -84,29 +83,29 @@ public class CrosswordActivity extends AppCompatActivity {
 
     //initiates the widgets that will be used
     private void initiateWidgets() {
-        across = (Button) findViewById(R.id.iButtonAcross);
-        down = (Button) findViewById(R.id.iButtonDown);
-        acrossImg = (ImageView) findViewById(R.id.iimageView1);
-        downImg = (ImageView) findViewById(R.id.iimageView2);
-        iWin = (TextView) findViewById(R.id.iWin);
+        across = findViewById(R.id.iButtonAcross);
+        down = findViewById(R.id.iButtonDown);
+        acrossImg = findViewById(R.id.iimageView1);
+        downImg = findViewById(R.id.iimageView2);
+        iWin = findViewById(R.id.iWin);
 
-        textViewDiabetes = (TextView) findViewById(R.id.itextViewDiabetes);
-        textViewCalories = (TextView) findViewById(R.id.itextViewCalories);
-        textViewSodium = (TextView) findViewById(R.id.itextViewSodium);
-        textViewVitamins = (TextView) findViewById(R.id.itextViewVitamins);
-        textViewFruit = (TextView) findViewById(R.id.itextViewFruit);
-        textViewObese = (TextView) findViewById(R.id.itextViewObese);
-        textViewExercise = (TextView) findViewById(R.id.itextViewExercise);
-        textViewCarbohydrates = (TextView) findViewById(R.id.itextViewCarbohydrates);
+        textViewDiabetes = findViewById(R.id.itextViewDiabetes);
+        textViewCalories = findViewById(R.id.itextViewCalories);
+        textViewSodium = findViewById(R.id.itextViewSodium);
+        textViewVitamins = findViewById(R.id.itextViewVitamins);
+        textViewFruit = findViewById(R.id.itextViewFruit);
+        textViewObese = findViewById(R.id.itextViewObese);
+        textViewExercise = findViewById(R.id.itextViewExercise);
+        textViewCarbohydrates = findViewById(R.id.itextViewCarbohydrates);
 
-        textViewNum1 = (TextView) findViewById(R.id.itextView2_3);
-        textViewNum2 = (TextView) findViewById(R.id.itextView3_13);
-        textViewNum3 = (TextView) findViewById(R.id.itextView4_11);
-        textViewNum4 = (TextView) findViewById(R.id.itextView5_2);
-        textViewNum5 = (TextView) findViewById(R.id.itextView5_6);
-        textViewNum6 = (TextView) findViewById(R.id.itextView7_8);
-        textViewNum7 = (TextView) findViewById(R.id.itextView8_10);
-        textViewNum8 = (TextView) findViewById(R.id.itextView10_7);
+        textViewNum1 = findViewById(R.id.itextView2_3);
+        textViewNum2 = findViewById(R.id.itextView3_13);
+        textViewNum3 = findViewById(R.id.itextView4_11);
+        textViewNum4 = findViewById(R.id.itextView5_2);
+        textViewNum5 = findViewById(R.id.itextView5_6);
+        textViewNum6 = findViewById(R.id.itextView7_8);
+        textViewNum7 = findViewById(R.id.itextView8_10);
+        textViewNum8 = findViewById(R.id.itextView10_7);
     }
 
     //initiates all listeners for the TextViews

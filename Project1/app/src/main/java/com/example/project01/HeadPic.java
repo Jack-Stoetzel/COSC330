@@ -43,18 +43,18 @@ public class HeadPic extends Activity {
     //initiates the widgets that will be used
     private void initiateWidgets()
     {
-        textViewEar = (TextView)findViewById(R.id.itextViewEar);
-        textViewEye = (TextView)findViewById(R.id.itextViewEye);
-        textViewNose = (TextView)findViewById(R.id.itextViewNose);
-        textViewMouth = (TextView)findViewById(R.id.itextViewMouth);
-        textViewNeck = (TextView)findViewById(R.id.itextViewNeck);
+        textViewEar = findViewById(R.id.itextViewEar);
+        textViewEye = findViewById(R.id.itextViewEye);
+        textViewNose = findViewById(R.id.itextViewNose);
+        textViewMouth = findViewById(R.id.itextViewMouth);
+        textViewNeck = findViewById(R.id.itextViewNeck);
 
-        earButton = (Button)findViewById(R.id.ibuttonEar);
-        earButton2 = (Button)findViewById(R.id.ibuttonEar2);
-        eyeButton = (Button)findViewById(R.id.ibuttonEye);
-        noseButton = (Button)findViewById(R.id.ibuttonNose);
-        mouthButton = (Button)findViewById(R.id.ibuttonMouth);
-        neckButton = (Button)findViewById(R.id.ibuttonNeck);
+        earButton = findViewById(R.id.ibuttonEar);
+        earButton2 = findViewById(R.id.ibuttonEar2);
+        eyeButton = findViewById(R.id.ibuttonEye);
+        noseButton = findViewById(R.id.ibuttonNose);
+        mouthButton = findViewById(R.id.ibuttonMouth);
+        neckButton = findViewById(R.id.ibuttonNeck);
     }
 
     //initiates all listeners

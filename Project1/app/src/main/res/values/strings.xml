@@ -141,20 +141,78 @@
     </string-array>
 
     <string-array name="menu">
-        <item>Title 1</item>
-        <item>Title 2</item>
-        <item>Title 3</item>
-        <item>Title 4</item>
-        <item>Title 5</item>
-        <item>Title 6</item>
+        <item>Glossary</item>
+        <item>Crossword &amp; Word Search</item>
+        <item>Name That Part</item>
+        <item>Picture Stories</item>
+        <item>Speaking Exercises</item>
     </string-array>
 
-    <string name="blank">Blank</string>
+    <string-array name="exercise1">
+        <item>Health Center: Hello, health center. How may I help you?</item>
+        <item>Patient: Hello, this is Fatima Tuma. I want to make an appointment.</item>
+        <item>Health Center: How do you spell your name?</item>
+        <item>Patient: T U M A</item>
+        <item>Health Center: What is the problem?</item>
+        <item>Patient: I have a headache and sore throat.</item>
+        <item>Health Center: Do you have a fever?</item>
+        <item>Patient: No, I don’t.</item>
+        <item>Health Center: Okay, come in tomorrow at 10 am.</item>
+        <item>Patient: Thank you.</item>
+    </string-array>
+
+    <string-array name="exercise2">
+        <item>Doctor: Hello, my name is Dr. Weston. How may I help you?</item>
+        <item>Patient: I have pain in my back.</item>
+        <item>Doctor: Do you have any other symptoms?</item>
+        <item>Patient: Yes, it hurts when I walk.</item>
+        <item>Patient: What is causing my back pain?</item>
+        <item>Doctor: I can give you some medicine to help. Take it two times a day.</item>
+        <item>Patient: How long should I take the medicine?</item>
+        <item>Doctor: Take all the medicine. It should last about one week.</item>
+        <item>Patient: Thank you, doctor.</item>
+    </string-array>
+
+    <string-array name="exercise3">
+        <item>Hello, how can I help you?</item>
+        <item>Patient: I need to find an over-the-counter medicine for allergies.</item>
+        <item>Pharmacist: What are your symptoms?</item>
+        <item>Patient: I have a headache and sneeze often.</item>
+        <item>Pharmacist: Here is a medicine that works for many people. Try this medicine.</item>
+        <item>Patient: Will this medicine cause side effects?</item>
+        <item>Pharmacist: The label says this medicine may make you feel sleepy.</item>
+        <item>Patient: Is there a medicine that will not make me sleepy?</item>
+        <item>Pharmacist: Yes, try this one.</item>
+        <item>Patient: Thank you.</item>
+    </string-array>
+
+    <string-array name="exercise4">
+        <item>What fruits do you like to eat?</item>
+        <item>Marc: I like to eat oranges and apples.</item>
+        <item>Larisa: What vegetables do you like to eat?</item>
+        <item>Marc: I like to eat broccoli and carrots.</item>
+        <item>Larisa: Do you like to eat spinach?</item>
+        <item>Marc: No, I do not like to eat spinach. Do you?</item>
+        <item>Larisa: No, I do not like spinach, either.</item>
+        <item>Larisa: Do you like to eat strawberries?</item>
+        <item>Marc: Yes,strawberries are my favorite food.</item>
+    </string-array>
+
+    <string-array name="exercise_List">
+        <item>Chapter 1: Health Care</item>
+        <item>Chapter 2: Doctors</item>
+        <item>Chapter 3: Medicine</item>
+        <item>Chapter 4: Healthy Foods</item>
+    </string-array>
+
+    <string name="blank"> </string>
     <string name="sound">Sound</string>
     <string name="slogo">Wellness Logo</string>
     <string name="login">Log-In</string>
     <string name="email">Email</string>
     <string name="pass">Password</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 

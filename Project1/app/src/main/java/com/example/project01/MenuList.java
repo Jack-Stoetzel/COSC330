@@ -58,14 +58,10 @@ public class MenuList extends AppCompatActivity {
 //                        Intent intent = new Intent(getApplicationContext(),.class);
 //                        startActivity(intent);
 //                        break;
-//                    case 4:
-//                        Intent intent = new Intent(getApplicationContext(),.class);
-//                        startActivity(intent);
-//                        break;
-//                    case 5:
-//                        Intent intent = new Intent(getApplicationContext(),.class);
-//                        startActivity(intent);
-//                        break;
+                    case 4:
+                        intent = new Intent(getApplicationContext(), SpeakingExercises.class);
+                        startActivity(intent);
+                        break;
                 }
                 //intent.putExtra("name",items[i]);
             }

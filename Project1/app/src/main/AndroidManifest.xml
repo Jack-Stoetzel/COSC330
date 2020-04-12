@@ -17,6 +17,8 @@
         <activity android:name=".BodyPic"/>
         <activity android:name=".HeadPic"/>
         <activity android:name=".MenuList"/>
+        <activity android:name=".SpeakingExercises"/>
+        <activity android:name=".SpeakingDisplay"/>
         <activity android:label="@string/app_name" android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

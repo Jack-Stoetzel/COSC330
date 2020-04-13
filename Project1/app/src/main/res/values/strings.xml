@@ -174,7 +174,7 @@
     </string-array>
 
     <string-array name="exercise3">
-        <item>Hello, how can I help you?</item>
+        <item>Pharmacist: Hello, how can I help you?</item>
         <item>Patient: I need to find an over-the-counter medicine for allergies.</item>
         <item>Pharmacist: What are your symptoms?</item>
         <item>Patient: I have a headache and sneeze often.</item>
@@ -187,7 +187,7 @@
     </string-array>
 
     <string-array name="exercise4">
-        <item>What fruits do you like to eat?</item>
+        <item>Larisa: What fruits do you like to eat?</item>
         <item>Marc: I like to eat oranges and apples.</item>
         <item>Larisa: What vegetables do you like to eat?</item>
         <item>Marc: I like to eat broccoli and carrots.</item>
@@ -195,7 +195,7 @@
         <item>Marc: No, I do not like to eat spinach. Do you?</item>
         <item>Larisa: No, I do not like spinach, either.</item>
         <item>Larisa: Do you like to eat strawberries?</item>
-        <item>Marc: Yes,strawberries are my favorite food.</item>
+        <item>Marc: Yes, strawberries are my favorite food.</item>
     </string-array>
 
     <string-array name="exercise_List">
@@ -233,7 +233,6 @@
     <string name="iCrossWord">Crossword Puzzle</string>
     <string name="iWin">You Win!</string>
 
-
     <string name="iAppointment">Appointment</string>
     <string name="iBreathe">Breathe</string>
     <string name="iCheckup">Checkup</string>
@@ -264,5 +263,17 @@
 
     <string name="iHeadPic">Head Picture</string>
     <string name="iBodyPic">Body Picture</string>
+    <string name="iLabelPic">Label Picture</string>
+
+    <string name="iNameAddr">Name and address\nof the pharmacy</string>
+    <string name="iPrescNum">Prescription\nnumber</string>
+    <string name="iPatName">Patient\'s name</string>
+    <string name="iDirections">Directions\nfor use</string>
+    <string name="iMedication">Medication\nname,\nstrength, and\ndosage form</string>
+    <string name="iQuantity">Quantity dispensed</string>
+    <string name="iRefills">Refills left</string>
+    <string name="iPrescName">Prescriber\'s name</string>
+    <string name="iDateOfFill">Date of filling</string>
+    <string name="iAuxLabel">Auxiliary labels</string>
 
 </resources>

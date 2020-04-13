@@ -16,6 +16,7 @@
         <activity android:name=".WordSearchActivity"/>
         <activity android:name=".BodyPic"/>
         <activity android:name=".HeadPic"/>
+        <activity android:name=".LabelPic"/>
         <activity android:name=".MenuList"/>
         <activity android:name=".SpeakingExercises"/>
         <activity android:name=".SpeakingDisplay"/>

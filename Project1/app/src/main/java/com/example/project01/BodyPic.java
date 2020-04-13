@@ -64,39 +64,39 @@ public class BodyPic extends Activity {
     //initiates the widgets that will be used
     private void initiateWidgets()
     {
-        textViewHead1 = findViewById(R.id.itextViewHead1);
-        textViewHead2 = findViewById(R.id.itextViewHead2);
-        textViewShoulder1 = findViewById(R.id.itextViewShoulder1);
-        textViewShoulder2 = findViewById(R.id.itextViewShoulder2);
-        textViewChest = findViewById(R.id.itextViewChest);
-        textViewBack = findViewById(R.id.itextViewBack);
-        textViewStomach = findViewById(R.id.itextViewStomach);
-        textViewArm1 = findViewById(R.id.itextViewArm1);
-        textViewArm2 = findViewById(R.id.itextViewArm2);
-        textViewHand1 = findViewById(R.id.itextViewHand1);
-        textViewHand2 = findViewById(R.id.itextViewHand2);
-        textViewFeet1 = findViewById(R.id.itextViewFeet1);
-        textViewFeet2 = findViewById(R.id.itextViewFeet2);
+        textViewHead1 = (TextView)findViewById(R.id.itextViewHead1);
+        textViewHead2 = (TextView)findViewById(R.id.itextViewHead2);
+        textViewShoulder1 = (TextView)findViewById(R.id.itextViewShoulder1);
+        textViewShoulder2 = (TextView)findViewById(R.id.itextViewShoulder2);
+        textViewChest = (TextView)findViewById(R.id.itextViewChest);
+        textViewBack = (TextView)findViewById(R.id.itextViewBack);
+        textViewStomach = (TextView)findViewById(R.id.itextViewStomach);
+        textViewArm1 = (TextView)findViewById(R.id.itextViewArm1);
+        textViewArm2 = (TextView)findViewById(R.id.itextViewArm2);
+        textViewHand1 = (TextView)findViewById(R.id.itextViewHand1);
+        textViewHand2 = (TextView)findViewById(R.id.itextViewHand2);
+        textViewFeet1 = (TextView)findViewById(R.id.itextViewFeet1);
+        textViewFeet2 = (TextView)findViewById(R.id.itextViewFeet2);
 
-        headButton1 = findViewById(R.id.ibuttonHead1);
-        headButton2 = findViewById(R.id.ibuttonHead2);
-        shoulderButton1 = findViewById(R.id.ibuttonShoulder1);
-        shoulderButton2 = findViewById(R.id.ibuttonShoulder2);
-        chestButton = findViewById(R.id.ibuttonChest);
-        backButton = findViewById(R.id.ibuttonBack);
-        stomachButton = findViewById(R.id.ibuttonStomach);
-        armButton1 = findViewById(R.id.ibuttonArm1);
-        armButton2 = findViewById(R.id.ibuttonArm2);
-        armButton3 = findViewById(R.id.ibuttonArm3);
-        armButton4 = findViewById(R.id.ibuttonArm4);
-        handButton1 = findViewById(R.id.ibuttonHand1);
-        handButton2 = findViewById(R.id.ibuttonHand2);
-        handButton3 = findViewById(R.id.ibuttonHand3);
-        handButton4 = findViewById(R.id.ibuttonHand4);
-        feetButton1 = findViewById(R.id.ibuttonFeet1);
-        feetButton2 = findViewById(R.id.ibuttonFeet2);
-        feetButton3 = findViewById(R.id.ibuttonFeet3);
-        feetButton4 = findViewById(R.id.ibuttonFeet4);
+        headButton1 = (Button)findViewById(R.id.ibuttonHead1);
+        headButton2 = (Button)findViewById(R.id.ibuttonHead2);
+        shoulderButton1 = (Button)findViewById(R.id.ibuttonShoulder1);
+        shoulderButton2 = (Button)findViewById(R.id.ibuttonShoulder2);
+        chestButton = (Button)findViewById(R.id.ibuttonChest);
+        backButton = (Button)findViewById(R.id.ibuttonBack);
+        stomachButton = (Button)findViewById(R.id.ibuttonStomach);
+        armButton1 = (Button)findViewById(R.id.ibuttonArm1);
+        armButton2 = (Button)findViewById(R.id.ibuttonArm2);
+        armButton3 = (Button)findViewById(R.id.ibuttonArm3);
+        armButton4 = (Button)findViewById(R.id.ibuttonArm4);
+        handButton1 = (Button)findViewById(R.id.ibuttonHand1);
+        handButton2 = (Button)findViewById(R.id.ibuttonHand2);
+        handButton3 = (Button)findViewById(R.id.ibuttonHand3);
+        handButton4 = (Button)findViewById(R.id.ibuttonHand4);
+        feetButton1 = (Button)findViewById(R.id.ibuttonFeet1);
+        feetButton2 = (Button)findViewById(R.id.ibuttonFeet2);
+        feetButton3 = (Button)findViewById(R.id.ibuttonFeet3);
+        feetButton4 = (Button)findViewById(R.id.ibuttonFeet4);
     }
 
     //initiates all listeners
@@ -322,10 +322,10 @@ public class BodyPic extends Activity {
         }
     };
 
-    //button action sends user to body page
+    //button action sends user to label page
     public void nextBtn(View view)
     {
-        Intent intent = new Intent(getApplicationContext(), HeadPic.class);
+        Intent intent = new Intent(getApplicationContext(), LabelPic.class);
         startActivity(intent);
     }
 
@@ -337,7 +337,7 @@ public class BodyPic extends Activity {
         //startActivity(intent);
     }
 
-    //button action sends user to body page
+    //button action sends user to head page
     public void prevBtn(View view)
     {
         Intent intent = new Intent(getApplicationContext(), HeadPic.class);

@@ -208,11 +208,53 @@
     <string name="blank"> </string>
     <string name="sound">Sound</string>
     <string name="slogo">Wellness Logo</string>
-    <string name="login">Log-In</string>
+
     <string name="email">Email</string>
     <string name="pass">Password</string>
+    <string name="invalidE">Invalid Email</string>
+    <string name="invalidP">Invalid Password</string>
     <string name="back">Back</string>
     <string name="next">Next</string>
+    <string name="search">Search</string>
+
+    <string name="login">Log-In</string>
+    <string name="main">Main Menu</string>
+    <string name="gloss">Glossary</string>
+    <string name="pic">Picture Stories</string>
+    <string name="speak">Speaking Exercises</string>
+
+    <string name="maria">Maria\'s Story</string>
+    <string name="tuma">Tuma\'s Story</string>
+
+    <string-array name="maria_story">
+        <item>This is Maria.</item>
+        <item>Maria is very sick.</item>
+        <item>But, Maria did not want to see a doctor. </item>
+        <item>Suddenly, Maria couldn\'t breathe.</item>
+        <item>So Maria\'s husband drove her to the hospital.</item>
+        <item>Maria stayed in the hospital for 3 days.</item>
+        <item>A few days later, Maria got a bad cough again.</item>
+        <item>Maria did not want to go back to the hospital.</item>
+        <item>Instead, Maria decided to call her doctor.</item>
+        <item>But Maria needs an interpreter to help her.</item>
+        <item>Maria goes to an interpreter.</item>
+        <item>The interpreter asks for Maria\'s name and Insurance Card.</item>
+        <item>Maria gives her the insurance card</item>
+        <item>The interpreter gives Maria a form to fill out to get more information.</item>
+    </string-array>
+
+    <string-array name="tuma_story">
+        <item>Hello, health center. How may I help you?</item>
+        <item>Hello, this is Fatima Tuma. I want to make an appointment.</item>
+        <item>How do you spell your name?</item>
+        <item>T U M A</item>
+        <item>I have a headache and sore throat.</item>
+        <item>Do you have a fever?</item>
+        <item>No, I don’t.</item>
+        <item>Okay, come in tomorrow at 10 am.</item>
+        <item>Thank you.</item>
+    </string-array>
+
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 

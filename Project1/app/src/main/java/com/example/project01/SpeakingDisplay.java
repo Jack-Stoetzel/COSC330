@@ -6,7 +6,6 @@ import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -51,9 +50,7 @@ public class SpeakingDisplay extends AppCompatActivity {
                 break;
         }
 
-        for (String s : exercise) {
-            dialogue.append(s + "\n\n");
-        }
+        dialogue.setText(exercise[0]);
 
         pos = -1;
 
@@ -76,9 +73,13 @@ public class SpeakingDisplay extends AppCompatActivity {
         if(pos > 0) {
             pos--;
 
-            String toSpeak = exercise[pos];
+            dialogue.setText("");
+            for(int i = 0; i <= pos; i++)
+            {
+                dialogue.append(exercise[i] + "\n\n");
+            }
 
-            Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
+            String toSpeak = exercise[pos];
 
             speaker.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
         }
@@ -92,9 +93,13 @@ public class SpeakingDisplay extends AppCompatActivity {
             pos++;
         }
 
-        String toSpeak = exercise[pos];
+        dialogue.setText("");
+        for(int i = 0; i <= pos; i++)
+        {
+            dialogue.append(exercise[i] + "\n\n");
+        }
 
-        Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
+        String toSpeak = exercise[pos];
 
         speaker.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
     }

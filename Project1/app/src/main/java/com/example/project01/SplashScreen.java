@@ -7,22 +7,29 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class SplashScreen extends AppCompatActivity {
     boolean validEmail = false;
     boolean validPass = false;
+    EditText emailField;
+    EditText passField;
+    TextView invalidE;
+    TextView invalidP;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        EditText emailField = findViewById(R.id.emailField);
+        emailField  = findViewById(R.id.emailField);
         emailField.addTextChangedListener(emailChange);
 
-        EditText passField = findViewById(R.id.passField);
+        passField = findViewById(R.id.passField);
         passField.addTextChangedListener(passChange);
 
-
+        invalidE = findViewById(R.id.invalidE);
+        invalidP = findViewById(R.id.invalidP);
     }
 
     private TextWatcher emailChange = new TextWatcher() {
@@ -45,10 +52,14 @@ public class SplashScreen extends AppCompatActivity {
             }catch(NumberFormatException e){
                 email = "";
             }
-            if(email.contains("@gulls.salisbury.edu"))
-            {
+            if(email.contains("@gulls.salisbury.edu")) {
+//            if(email.contains("@")) {
                 validEmail = true;
+                invalidE.setText(R.string.blank);
                 checkInput();
+            }
+            else {
+                invalidE.setText(R.string.invalidE);
             }
         }
     };
@@ -73,10 +84,14 @@ public class SplashScreen extends AppCompatActivity {
             }catch(NumberFormatException e){
                 password = "";
             }
-            if(password.equals("Pa55W0RD"))
-            {
+            if(password.equals("Pa55W0RD")) {
+//            if(password.equals("P")) {
                 validPass = true;
+                invalidE.setText(R.string.blank);
                 checkInput();
+            }
+            else {
+                invalidE.setText(R.string.invalidP);
             }
         }
     };
@@ -86,6 +101,7 @@ public class SplashScreen extends AppCompatActivity {
         if(validEmail && validPass)
         {
             Intent intent = new Intent(getApplicationContext(), MenuList.class);
+            finish();
             startActivity(intent);
         }
     }

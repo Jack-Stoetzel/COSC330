@@ -54,10 +54,10 @@ public class MenuList extends AppCompatActivity {
                         intent = new Intent(getApplicationContext(), HeadPic.class);
                         startActivity(intent);
                         break;
-//                    case 3:
-//                        Intent intent = new Intent(getApplicationContext(),.class);
-//                        startActivity(intent);
-//                        break;
+                    case 3:
+                        intent = new Intent(getApplicationContext(), StoryList.class);
+                        startActivity(intent);
+                        break;
                     case 4:
                         intent = new Intent(getApplicationContext(), SpeakingExercises.class);
                         startActivity(intent);

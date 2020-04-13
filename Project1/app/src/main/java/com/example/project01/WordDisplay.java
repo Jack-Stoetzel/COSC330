@@ -50,7 +50,7 @@ public class WordDisplay extends AppCompatActivity {
             @Override
             public void onInit(int status) {
                 if(status != TextToSpeech.ERROR) {
-                    speaker.setLanguage(Locale.CHINA);
+                    speaker.setLanguage(Locale.US);
                     // Locale:
                     // CANADA, CANADA_FRENCH, CHINA, FRANCE, GERMANY, ITALY, JAPAN, KOREA, PRC, ROOT(?), TAIWAN, UK, US
                 }
@@ -61,7 +61,7 @@ public class WordDisplay extends AppCompatActivity {
     public void onClick(View v) {
         String toSpeak = glossary[index];
 
-        Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
 
         speaker.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
     }

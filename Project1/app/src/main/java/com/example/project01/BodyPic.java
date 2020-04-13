@@ -333,8 +333,8 @@ public class BodyPic extends Activity {
     //button action sends user to main page
     public void mainBtn(View view)
     {
-        //Intent intent = new Intent(getApplicationContext(), .class);
-        //startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(), MenuList.class);
+        startActivity(intent);
     }
 
     //button action sends user to head page

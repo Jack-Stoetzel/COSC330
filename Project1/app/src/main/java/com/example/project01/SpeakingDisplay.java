@@ -17,6 +17,7 @@ public class SpeakingDisplay extends AppCompatActivity {
     TextToSpeech speaker;
     String[] exercise;
     TextView dialogue;
+    String[] speaking;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,18 +35,22 @@ public class SpeakingDisplay extends AppCompatActivity {
         switch(index){
             case 0:
                 exercise = getResources().getStringArray(R.array.exercise1);
+                speaking = getResources().getStringArray(R.array.speaking1);
                 img.setImageResource(R.drawable.tuma);
                 break;
             case 1:
                 exercise = getResources().getStringArray(R.array.exercise2);
+                speaking = getResources().getStringArray(R.array.speaking2);
                 img.setImageResource(R.drawable.back);
                 break;
             case 2:
                 exercise = getResources().getStringArray(R.array.exercise3);
+                speaking = getResources().getStringArray(R.array.speaking3);
                 img.setImageResource(R.drawable.chapter3);
                 break;
             case 3:
                 exercise = getResources().getStringArray(R.array.exercise4);
+                speaking = getResources().getStringArray(R.array.speaking4);
                 img.setImageResource(R.drawable.food);
                 break;
         }
@@ -79,7 +84,7 @@ public class SpeakingDisplay extends AppCompatActivity {
                 dialogue.append(exercise[i] + "\n\n");
             }
 
-            String toSpeak = exercise[pos];
+            String toSpeak = speaking[pos];
 
             speaker.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
         }
@@ -99,7 +104,7 @@ public class SpeakingDisplay extends AppCompatActivity {
             dialogue.append(exercise[i] + "\n\n");
         }
 
-        String toSpeak = exercise[pos];
+        String toSpeak = speaking[pos];
 
         speaker.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
     }

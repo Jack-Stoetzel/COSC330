@@ -161,6 +161,19 @@
         <item>Patient: Thank you.</item>
     </string-array>
 
+    <string-array name="speaking1">
+        <item>Hello, health center. How may I help you?</item>
+        <item>Hello, this is Fatima Tuma. I want to make an appointment.</item>
+        <item>How do you spell your name?</item>
+        <item>T U M A</item>
+        <item>What is the problem?</item>
+        <item>I have a headache and sore throat.</item>
+        <item>Do you have a fever?</item>
+        <item>No, I don’t.</item>
+        <item>Okay, come in tomorrow at 10 am.</item>
+        <item>Thank you.</item>
+    </string-array>
+
     <string-array name="exercise2">
         <item>Doctor: Hello, my name is Dr. Weston. How may I help you?</item>
         <item>Patient: I have pain in my back.</item>
@@ -171,6 +184,18 @@
         <item>Patient: How long should I take the medicine?</item>
         <item>Doctor: Take all the medicine. It should last about one week.</item>
         <item>Patient: Thank you, doctor.</item>
+    </string-array>
+
+    <string-array name="speaking2">
+        <item>Hello, my name is Dr. Weston. How may I help you?</item>
+        <item>I have pain in my back.</item>
+        <item>Do you have any other symptoms?</item>
+        <item>Yes, it hurts when I walk.</item>
+        <item>What is causing my back pain?</item>
+        <item>I can give you some medicine to help. Take it two times a day.</item>
+        <item>How long should I take the medicine?</item>
+        <item>Take all the medicine. It should last about one week.</item>
+        <item>Thank you, doctor.</item>
     </string-array>
 
     <string-array name="exercise3">
@@ -186,6 +211,19 @@
         <item>Patient: Thank you.</item>
     </string-array>
 
+    <string-array name="speaking3">
+        <item>Hello, how can I help you?</item>
+        <item>I need to find an over-the-counter medicine for allergies.</item>
+        <item>What are your symptoms?</item>
+        <item>I have a headache and sneeze often.</item>
+        <item>Here is a medicine that works for many people. Try this medicine.</item>
+        <item>Will this medicine cause side effects?</item>
+        <item>The label says this medicine may make you feel sleepy.</item>
+        <item>Is there a medicine that will not make me sleepy?</item>
+        <item>Yes, try this one.</item>
+        <item>Thank you.</item>
+    </string-array>
+
     <string-array name="exercise4">
         <item>Larisa: What fruits do you like to eat?</item>
         <item>Marc: I like to eat oranges and apples.</item>
@@ -196,6 +234,18 @@
         <item>Larisa: No, I do not like spinach, either.</item>
         <item>Larisa: Do you like to eat strawberries?</item>
         <item>Marc: Yes, strawberries are my favorite food.</item>
+    </string-array>
+
+    <string-array name="speaking4">
+        <item>What fruits do you like to eat?</item>
+        <item>I like to eat oranges and apples.</item>
+        <item>What vegetables do you like to eat?</item>
+        <item>I like to eat broccoli and carrots.</item>
+        <item>Do you like to eat spinach?</item>
+        <item>No, I do not like to eat spinach. Do you?</item>
+        <item>No, I do not like spinach, either.</item>
+        <item>Do you like to eat strawberries?</item>
+        <item>Yes, strawberries are my favorite food.</item>
     </string-array>
 
     <string-array name="exercise_List">

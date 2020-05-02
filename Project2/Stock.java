@@ -6,20 +6,21 @@ import java.time.LocalDateTime;
 
 public class Stock
 {
-    private String symbol;
-    private String name;
-    private double current;
-    private double open;
-    private double high;
-    private double low;
-    private double close;
-    private double changePercent;
-    private double change;
-    private int volume;
-    private LocalDateTime timestamp;
-    private String date;
-    private String time;
+    private String symbol;  //ticker symbol
+    private String name;    //company name
+    private double current; //current price of the stock today
+    private double open;    //opening price of the stock today
+    private double high;    //high of the stock today
+    private double low;     //low of the stock today
+    private double close;   //closing price of the stock yesterday
+    private double changePercent; //percentage of change between today and yesterday, can be positive or negative
+    private double change;  //value of change between today and yesterday, not percentage
+    private int volume;     //volume of trades today
+    private LocalDateTime timestamp; //timestamp for the current price
+    private String date;    //holds formatted date, avoids user knowing LocalDateTime library
+    private String time;    //holds formatted time, avoids user knowing LocalDateTime library
 
+    //create Stock object with null values
     public Stock()
     {
         symbol = "null";
@@ -37,6 +38,8 @@ public class Stock
         time = setTime();
     }
     
+    //create Stock object with values associated with the given ticker
+    //  makes an API call
     public Stock(String ticker)
     {
         JSONObject obj = getStockInfo(ticker);
@@ -75,7 +78,27 @@ public class Stock
         }
     }
     
+    //create Stock object with given parameters, useful for testing purposes
+    public Stock(String symbol, String name, double current, double open, double high, double low, double close, double changePercent, double change, int volume, LocalDateTime timestamp)
+    {
+        this.symbol = symbol;
+        this.name = name;
+        this.current = current;
+        this.open = open;
+        this.high = high;
+        this.low = low;
+        this.close = close;
+        this.changePercent = changePercent;
+        this.change = change;
+        this.volume = volume;
+        this.timestamp = timestamp;
+        date = setDate();
+        time = setTime();
+    }
+    
     //static methods
+    
+    //gets stock info for given ticker and returns the JSONObject
     public static JSONObject getStockInfo(String ticker)
     {
         try
@@ -110,16 +133,20 @@ public class Stock
     
     
     //instance methods
+    
+    //returns String of date in format
     public String setDate()
     {
         return getMonths() + "/" + getDays() + "/" + getYears();
     }
+    
+    //return String of time in format (24hrs)
     public String setTime()
     {
         return String.format("%d:%02d", getHours(), getMinutes());
     }
     
-    //gets for time values
+    //gets for time values, allows for user to not know LocalDateTime library
     public int getHours()
     {
         return timestamp.getHour();
@@ -141,7 +168,7 @@ public class Stock
         return timestamp.getYear();
     }
     
-    //getters
+    //getters for the Stock object attributes
     public String getSymbol()
     {
         return symbol;
@@ -195,6 +222,8 @@ public class Stock
         return time;
     }
     
+    //returns String of all of Stock objects attributes
+    //  useful for human readability and testing purposes
     public String toString()
     {
         return "Symbol: " + symbol + "\nName: " + name 
@@ -205,7 +234,7 @@ public class Stock
         + "\nTimestamp: " + timestamp;
     }
     
-    //main
+    //main for testing purposes only
     public static void main(String[] args)
     {
         Stock test = new Stock("AAPL");
@@ -216,7 +245,6 @@ public class Stock
         
         Stock test3 = new Stock("VUG");
         System.out.println("\n" + test3.toString());
-        //System.out.println("\n" + test3.getHours() + ":" + test3.getMinutes()); //mins will need to be formatted
         System.out.println(test3.getTime());
         
         System.out.println("\n" + test3.getMonths() + "/" + test3.getDays() + "/" + test3.getYears()); //or use test3.getDate()

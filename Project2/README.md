@@ -1,11 +1,11 @@
 #Read Me PLZ
 
-command to compile Stock.java:
+command to compile:
 
-javac -cp json-20190722.jar Stock.java
+javac -cp json-20190722.jar *.java
 
 command to run:
 
-java -Xbootclasspath/a:json-20190722.jar Stock
+java -Xbootclasspath/a:json-20190722.jar <name of class you want to run>
 
-main in Stock.java will be removed eventually
+mains in all classes will be removed eventually, they are for testing purposes only

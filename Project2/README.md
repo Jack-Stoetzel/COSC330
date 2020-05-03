@@ -1,10 +1,10 @@
-#Read Me PLZ
+# Read Me PLZ
 
-command to compile:
+## command to compile:
 
 javac -cp json-20190722.jar *.java
 
-command to run:
+## command to run:
 
 java -Xbootclasspath/a:json-20190722.jar [name of class you want to run]
 

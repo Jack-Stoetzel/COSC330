@@ -13,6 +13,8 @@ public class OwnStrategy implements StockStrategy
     //HOLD if neither
     
     Stock stock;
+    String[] losers;
+    String[] gainers;
     
     //create OwnStrategy object that uses given Stock
     public OwnStrategy(Stock s)
@@ -24,8 +26,8 @@ public class OwnStrategy implements StockStrategy
     public int determineAction()
     {
         //assumes that losers and gainers is the same length, looks like it should always be 10
-        String[] losers = getBiggestLosers();
-        String[] gainers = getBiggestGainers();
+        losers = getBiggestLosers();
+        gainers = getBiggestGainers();
         
         for(int i = 0; i < gainers.length; i++)
         {
@@ -101,31 +103,26 @@ public class OwnStrategy implements StockStrategy
         return tickers;
     }
     
-    //prints a String[] to console
-    //  useful to know which stocks are gainers/losers for testing
-    public static void printTicker(String[] tickers)
+    //returns the top 5 losers.
+    public String getLosers()
     {
-        for(int i = 0; i < tickers.length; i++)
-        {
-            System.out.print(tickers[i] + " ");
-        }
-        System.out.println();
+    	String loser_list = "";
+    	for(int count = 0; count < 5; count++) 
+    	{
+    		loser_list = loser_list + losers[count] + " ";
+    	}
+    	return loser_list;
     }
     
-    //main for testing purposes only
-    public static void main(String[] args)
+    //returns the top 5 gainers.
+    public String getGainers()
     {
-        LocalDateTime time1 = LocalDateTime.of(2020, 4, 12, 10, 15);
-        Stock s1 = new Stock("AMZN", "TEST", 0, 0, 0, 0, 0, 5.5, 0, 0, time1);
-        OwnStrategy test1 = new OwnStrategy(s1);
-        System.out.println("Test1: " + test1.determineAction());
-        
-        Stock s2 = new Stock("TVIX", "TEST", 0, 0, 0, 0, 0, 5.5, 0, 0, time1);
-        OwnStrategy test2 = new OwnStrategy(s2);
-        System.out.println("Test2: " + test2.determineAction());
-        
-        Stock s3 = new Stock("TEST", "TEST", 0, 0, 0, 0, 0, 5.5, 0, 0, time1);
-        OwnStrategy test3 = new OwnStrategy(s3);
-        System.out.println("Test3: " + test3.determineAction());
+    	String gainer_list = "";
+    	for(int count = 0; count < 5; count++)
+    	{
+    		gainer_list = gainer_list + gainers[count] + " ";
+    	}
+    	return gainer_list;
     }
+    
 }

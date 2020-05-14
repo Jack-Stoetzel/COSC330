@@ -234,20 +234,4 @@ public class Stock
         + "\nTimestamp: " + timestamp;
     }
     
-    //main for testing purposes only
-    public static void main(String[] args)
-    {
-        Stock test = new Stock("AAPL");
-        System.out.println("\n" + test.toString());
-        
-        Stock test2 = new Stock("APL");
-        System.out.println("\n" + test2.toString());
-        
-        Stock test3 = new Stock("VUG");
-        System.out.println("\n" + test3.toString());
-        System.out.println(test3.getTime());
-        
-        System.out.println("\n" + test3.getMonths() + "/" + test3.getDays() + "/" + test3.getYears()); //or use test3.getDate()
-        
-    }
 }

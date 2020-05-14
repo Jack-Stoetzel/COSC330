@@ -26,6 +26,8 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
@@ -35,6 +37,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.FlowLayout;
 import javax.swing.SwingConstants;
+import javax.swing.Timer;
 
 public class Stock_view extends JFrame {
 
@@ -42,14 +45,16 @@ public class Stock_view extends JFrame {
 	private JPanel contentPane;
 	private JPanel search_panel;
 	private DefaultTableModel dtm = new DefaultTableModel(0, 0);
+	private DefaultTableModel hold_dtm = new DefaultTableModel(0, 0);
 	private String[] column = { "Stock Name", "Symbol", "Value" }; 
-	private Object[][] search_data = { { "A", "B", "C"} };
+	private String[] hold_column = { "Symbol", "Value", "Gain/Loss", "Amount Held" };
 	private User_Portfolio USER = new User_Portfolio();
 	private JTable table;
 	private Boolean clear_flag = false;
 	private JTextField searchtf;
 	private JScrollPane scrollPane;
 	private JTable stock_held_table;
+	private Held_Stock current_stocks = new Held_Stock(10); // Number of <companies> a user can have stocks with.
 
 	/**
 	 * Launch the application.
@@ -117,6 +122,18 @@ public class Stock_view extends JFrame {
 	/**
 	 * Create the frame.
 	 */
+	
+	public Double calculateGain() {
+		Double netGain = USER.getCurrentGain();
+		
+		for(int count = 0; count < hold_dtm.getRowCount(); count++) {
+			Object gain = hold_dtm.getValueAt(count, 2);
+			String str = gain.toString();
+			netGain += Double.valueOf(str);
+		}
+		return netGain;
+	}
+	
 	
 	public Stock_view() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -189,7 +206,7 @@ public class Stock_view extends JFrame {
 		selection_panel.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Selected Stock");
-		lblNewLabel.setBounds(250, 10, 75, 15);
+		lblNewLabel.setBounds(200, 10, 150, 15);
 		selection_panel.add(lblNewLabel);
 		
 		JLabel stockName_header = new JLabel("Stock Name");
@@ -212,14 +229,6 @@ public class Stock_view extends JFrame {
 		JLabel value_header = new JLabel("Value");
 		value_header.setBounds(260, 35, 75, 15);
 		selection_panel.add(value_header);
-		
-		JButton btnNewButton = new JButton("Buy");
-		btnNewButton.setBounds(375, 50, 75, 25);
-		selection_panel.add(btnNewButton);
-		
-		JButton btnNewButton_1 = new JButton("Sell");
-		btnNewButton_1.setBounds(460, 50, 75, 25);
-		selection_panel.add(btnNewButton_1);
 		
 		JLabel ss_value_lb = new JLabel("");
 		ss_value_lb.setBounds(260, 50, 75, 15);
@@ -262,6 +271,8 @@ public class Stock_view extends JFrame {
 		});
 		clear_btn.setBounds(475, 25, 100, 25);
 		search_panel.add(clear_btn);
+		/* End of clear button block*/
+		
 		
 		/* JPanel to contain all user portfolio information */
 		JPanel portfolio_panel = new JPanel();
@@ -271,41 +282,49 @@ public class Stock_view extends JFrame {
 		portfolio_panel.setLayout(null);
 		
 		JPanel portfolio_subpanel = new JPanel();
-		portfolio_subpanel.setBounds(161, 27, 315, 220);
+		portfolio_subpanel.setBounds(10, 27, 466, 220);
 		portfolio_panel.add(portfolio_subpanel);
 		portfolio_subpanel.setLayout(null);
 		
 		JLabel portfolio_name_lb = new JLabel("Name:");
-		portfolio_name_lb.setBounds(25, 25, 75, 15);
+		portfolio_name_lb.setBounds(25, 25, 100, 15);
 		portfolio_subpanel.add(portfolio_name_lb);
 		
 		JLabel total_value_lb = new JLabel("Total Value:");
-		total_value_lb.setBounds(25, 50, 75, 15);
+		total_value_lb.setBounds(25, 50, 100, 15);
 		portfolio_subpanel.add(total_value_lb);
 		
-		JLabel buying_power_lb = new JLabel("Buying Power");
-		buying_power_lb.setBounds(25, 75, 75, 15);
+		JLabel buying_power_lb = new JLabel("Buying Power:");
+		buying_power_lb.setBounds(25, 75, 100, 15);
 		portfolio_subpanel.add(buying_power_lb);
 		
-		JLabel current_gain_lb = new JLabel("Current Gain");
-		current_gain_lb.setBounds(25, 100, 75, 15);
+		JLabel current_gain_lb = new JLabel("Current Gain:");
+		current_gain_lb.setBounds(25, 125, 100, 15);
 		portfolio_subpanel.add(current_gain_lb);
 		
 		JLabel portfolio_name_tf = new JLabel(USER.getName());
-		portfolio_name_tf.setBounds(225, 25, 50, 15);
+		portfolio_name_tf.setBounds(325, 25, 100, 15);
 		portfolio_subpanel.add(portfolio_name_tf);
 		
-		JLabel total_value_tf = new JLabel("$" + USER.getTotalValue().toString());
-		total_value_tf.setBounds(225, 50, 50, 15);
+		JLabel total_value_tf = new JLabel("$0.00");
+		total_value_tf.setBounds(325, 50, 100, 15);
 		portfolio_subpanel.add(total_value_tf);
 		
-		JLabel buying_power_tf = new JLabel("$" + USER.getBuyingPower().toString());
-		buying_power_tf.setBounds(225, 75, 50, 15);
+		JLabel buying_power_tf = new JLabel("$0.00");
+		buying_power_tf.setBounds(325, 75, 100, 15);
 		portfolio_subpanel.add(buying_power_tf);
 		
-		JLabel current_gain_tf = new JLabel("$" + USER.getCurrentGain().toString());
-		current_gain_tf.setBounds(225, 100, 50, 15);
+		JLabel current_gain_tf = new JLabel("$0.00");
+		current_gain_tf.setBounds(325, 125, 100, 15);
 		portfolio_subpanel.add(current_gain_tf);
+		
+		JLabel stock_value_lb = new JLabel("Stock Value:");
+		stock_value_lb.setBounds(25, 100, 100, 15);
+		portfolio_subpanel.add(stock_value_lb);
+		
+		JLabel stock_value_tf = new JLabel("$0.00");
+		stock_value_tf.setBounds(325, 100, 100, 15);
+		portfolio_subpanel.add(stock_value_tf);
 		
 		JButton withdraw_btn = new JButton("Withdraw Funds");
 		withdraw_btn.addActionListener(new ActionListener() { // Action listener to remove funds.
@@ -321,12 +340,12 @@ public class Stock_view extends JFrame {
 							JOptionPane.showMessageDialog(getContentPane(), "You cannot withdraw more funds than you have available!");
 					}
 					USER.setBuyingPower(USER.getBuyingPower() - withdrawAmount);
-					buying_power_tf.setText("$" + USER.getBuyingPower().toString());
+					buying_power_tf.setText("$" + String.format("%.2f", USER.getBuyingPower()));
 				}
 				
 			}
 		});
-		withdraw_btn.setBounds(326, 303, 150, 50);
+		withdraw_btn.setBounds(300, 300, 175, 50);
 		portfolio_panel.add(withdraw_btn);
 		
 		JButton increase_bp_btn = new JButton("Increase Buying Power");
@@ -336,13 +355,37 @@ public class Stock_view extends JFrame {
 				while(returnedDeposit < 0)
 					returnedDeposit = Integer.parseInt(JOptionPane.showInputDialog("Enter how much money you wish to add:"));
 				USER.setBuyingPower(USER.getBuyingPower() + returnedDeposit);
-				buying_power_tf.setText("$" + USER.getBuyingPower().toString());
+				buying_power_tf.setText("$" + String.format("%.2f", USER.getBuyingPower()));
 			}
 		});
-		increase_bp_btn.setBounds(161, 303, 150, 50);
+		increase_bp_btn.setBounds(10, 300, 175, 50);
 		portfolio_panel.add(increase_bp_btn);
 		/* End of portfolio JPanel content */
 		
+		
+		/* Buy and sell stock button handler & setup */
+		ActionListener buySell = new ActionListener() { // Buy & Sell stocks button handler. 
+			public void actionPerformed(ActionEvent e) {
+				if(!ss_name_lb.getText().equals("")) {
+					BuySell_Stock_Window bswindow = new BuySell_Stock_Window(ss_symbol_lb.getText(), USER, current_stocks, hold_dtm);
+					bswindow.setVisible(true);
+					
+				} else {
+					JOptionPane.showMessageDialog(getContentPane(), "No stock selected!");
+				}
+			}
+		};
+		
+		JButton buy_btn = new JButton("Buy"); 
+		buy_btn.addActionListener(buySell);
+		buy_btn.setBounds(375, 50, 75, 25);
+		selection_panel.add(buy_btn);
+		
+		JButton sell_btn = new JButton("Sell");
+		sell_btn.addActionListener(buySell);
+		sell_btn.setBounds(460, 50, 75, 25);
+		selection_panel.add(sell_btn);
+		/* End of buy and sell stock handler & setup */
 		
 		
 		/* JPanel to contain currently held stock */
@@ -352,9 +395,44 @@ public class Stock_view extends JFrame {
 		contentPane.add(stock_held_panel);
 		stock_held_panel.setLayout(null);
 		
+		JScrollPane sp_held = new JScrollPane();
+		sp_held.setBounds(6, 16, 470, 143);
+		stock_held_panel.add(sp_held);
+		
 		stock_held_table = new JTable();
-		stock_held_table.setBounds(6, 16, 470, 143);
-		stock_held_panel.add(stock_held_table);
+		sp_held.setViewportView(stock_held_table);
+		hold_dtm.setColumnIdentifiers(hold_column);
+		stock_held_table.setRowHeight(30);
+		stock_held_table.setRowSelectionAllowed(true);
+		stock_held_table.setColumnSelectionAllowed(false);
+		stock_held_table.setModel(hold_dtm);
+		/* End of held stock JPanel */
+		
+		/* CONSTANT 5 SECOND PAGE "REFRESHER" */
+		int ref_delay = 5000;
+		ActionListener taskPerformer = new ActionListener() {
+			public void actionPerformed(ActionEvent evt) {
+				Double total = USER.getBuyingPower() + USER.getStockValue() + calculateGain();
+				String tv = String.format("%.2f", total);
+				String bp = String.format("%.2f", USER.getBuyingPower());
+				String sv = String.format("%.2f", USER.getStockValue());
+				String cg = String.format("%.2f", calculateGain());
+				
+				total_value_tf.setText("$" + tv); // Updates total value text field.
+				buying_power_tf.setText("$" + bp); // Updates the buying power text field.
+				stock_value_tf.setText("$" + sv); // Updates the stock value text field.
+				current_gain_tf.setText("$" + cg); // Updates the stock value text field.
+				for(int count = 0; count < 10; count++) { // Checks for non-null held stock array to update the table.
+					if(current_stocks.isNullAt(count) == false) {
+						String gainloss = String.format("%.2f", current_stocks.getGainLoss(count));
+						hold_dtm.setValueAt(current_stocks.getNewStockValueAt(count), count, 1); // Updates the price.
+						hold_dtm.setValueAt(gainloss, count, 2); // Updates the GainLoss.
+						hold_dtm.setValueAt(current_stocks.getStocksBoughtAt(count), count, 3); // Update the # of stocks bought.
+					}
+				}
+			}
+		};
+		new Timer(ref_delay, taskPerformer).start();
 		
 	}
 }

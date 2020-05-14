@@ -4,6 +4,7 @@ public class User_Portfolio {
 	private String name;
 	private Double total_value;
 	private Double buying_power;
+	private Double stock_value;
 	private Double current_gain;
 	
 	
@@ -11,6 +12,7 @@ public class User_Portfolio {
 		name = "John Doe";
 		total_value = 0.00;
 		buying_power = 0.00;
+		stock_value = 0.00;
 		current_gain = 0.00;
 	}
 	
@@ -33,6 +35,10 @@ public class User_Portfolio {
 		this.buying_power = value;
 	}
 	
+	public void setStockValue(Double value) {
+		this.stock_value = value;
+	}
+	
 	public void setCurrentGain(Double value) {
 		this.current_gain = value;
 	}
@@ -47,6 +53,10 @@ public class User_Portfolio {
 	
 	public Double getBuyingPower() {
 		return buying_power;
+	}
+	
+	public Double getStockValue() {
+		return stock_value;
 	}
 	
 	public Double getCurrentGain() {

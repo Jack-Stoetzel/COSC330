@@ -65,12 +65,12 @@ public class Login extends JFrame {
 		login_btn.addActionListener(new ActionListener() { // Login button
 			public void actionPerformed(ActionEvent e) {
 				if(username_tf.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
-					JOptionPane.showMessageDialog(getContentPane(), "Login Successful.");
+					//JOptionPane.showMessageDialog(getContentPane(), "Login Successful.");
 					Login.this.dispose();
 					Stock_view stock = new Stock_view();
 					stock.setVisible(true);
 				} else {
-					JOptionPane.showMessageDialog(getContentPane(), "Bad Login Credentials.");
+					JOptionPane.showMessageDialog(getContentPane(), "Bad Login Credentials.", "Error", JOptionPane.ERROR_MESSAGE);
 				}
 			}
 		});

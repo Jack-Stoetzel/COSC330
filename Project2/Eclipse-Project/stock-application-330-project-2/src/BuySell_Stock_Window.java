@@ -98,10 +98,10 @@ public class BuySell_Stock_Window extends JFrame {
 		commit_btn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if((Integer) stocks_spinner.getValue() <= 0) {
-					JOptionPane.showMessageDialog(getContentPane(), "Invalid number of stocks.");
+					JOptionPane.showMessageDialog(getContentPane(), "Invalid number of stocks.", "Error", JOptionPane.ERROR_MESSAGE);
 				} else if(buy_rbtn.isSelected()) {
 					if((Integer) stocks_spinner.getValue() * stock.getCurrent() > USER.getBuyingPower()) {
-						JOptionPane.showMessageDialog(getContentPane(), "Insufficient buying power.");
+						JOptionPane.showMessageDialog(getContentPane(), "Insufficient buying power.", "Error", JOptionPane.ERROR_MESSAGE);
 					} else {
 						if(hs.findHeld(ticker) == -1) { // If user does not own any of that particular stock.
 							hs.addStock(ticker, (Integer) stocks_spinner.getValue());
@@ -121,22 +121,26 @@ public class BuySell_Stock_Window extends JFrame {
 					}
 				} else if (sell_rbtn.isSelected()) {
 					if(hs.findHeld(ticker) == -1) {
-						JOptionPane.showMessageDialog(getContentPane(), "You do not own any of that stock currently.");
+						JOptionPane.showMessageDialog(getContentPane(), "You do not own any of " + stock.getName() + " stock currently.", "Error", JOptionPane.ERROR_MESSAGE);
 					} else {
 						int position = hs.findHeld(ticker);
-						if((Integer) stocks_spinner.getValue() < hs.getStocksBoughtAt(position)) {
-							hs.removeFromtStock(ticker, (Integer) stocks_spinner.getValue());
-							USER.setBuyingPower(USER.getBuyingPower() + ((Integer) stocks_spinner.getValue() * stock.getCurrent()));
-							USER.setStockValue(USER.getStockValue() - ((Integer) stocks_spinner.getValue() * stock.getCurrent()));
-							hold_dtm.setValueAt(hs.getStocksBoughtAt(position), position, 3);
-							BuySell_Stock_Window.this.dispose();
+						if(hs.getStocksBoughtAt(position) - (Integer) stocks_spinner.getValue() >= 0){
+							if((Integer) stocks_spinner.getValue() < hs.getStocksBoughtAt(position)) {
+								hs.removeFromtStock(ticker, (Integer) stocks_spinner.getValue());
+								USER.setBuyingPower(USER.getBuyingPower() + ((Integer) stocks_spinner.getValue() * stock.getCurrent()));
+								USER.setStockValue(USER.getStockValue() - ((Integer) stocks_spinner.getValue() * stock.getCurrent()));
+								hold_dtm.setValueAt(hs.getStocksBoughtAt(position), position, 3);
+								BuySell_Stock_Window.this.dispose();
+							} else {
+								hs.removeStock(ticker, (Integer) stocks_spinner.getValue());
+								USER.setBuyingPower(USER.getBuyingPower() + calculateGain(USER, hold_dtm) + ((Integer) stocks_spinner.getValue() * stock.getCurrent()));
+								System.out.println("Current: " + USER.getStockValue() + " - " + ((Integer) stocks_spinner.getValue() + " * " + stock.getCurrent()));
+								USER.setStockValue(USER.getStockValue() - ((Integer) stocks_spinner.getValue() * stock.getCurrent()));
+								hold_dtm.removeRow(position);
+								BuySell_Stock_Window.this.dispose();
+							}
 						} else {
-							hs.removeStock(ticker, (Integer) stocks_spinner.getValue());
-							USER.setBuyingPower(USER.getBuyingPower() + calculateGain(USER, hold_dtm) + ((Integer) stocks_spinner.getValue() * stock.getCurrent()));
-							System.out.println("Current: " + USER.getStockValue() + " - " + ((Integer) stocks_spinner.getValue() + " * " + stock.getCurrent()));
-							USER.setStockValue(USER.getStockValue() - ((Integer) stocks_spinner.getValue() * stock.getCurrent()));
-							hold_dtm.removeRow(position);
-							BuySell_Stock_Window.this.dispose();
+							JOptionPane.showMessageDialog(getContentPane(), "You do not own that many " + stock.getName() + " stocks.", "Error", JOptionPane.ERROR_MESSAGE);
 						}
 					}
 				} else {

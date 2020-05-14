@@ -144,7 +144,7 @@ public class Stock_view extends JFrame {
 		contentPane.setLayout(null);
 		
 		/* ADD LOGO TO THE JFRAME */
-		JLabel logo = new JLabel(new ImageIcon("C:\\Users\\Declan\\eclipse-workspace\\stock-application-330-project-2\\src\\img\\stonks.jpg")); // Needs to make a relative path.
+		JLabel logo = new JLabel(new ImageIcon(".\\src\\img\\stonks.jpg")); // Needs to make a relative path.
 		logo.setSize(1071, 300);
 		logo.setLocation(10, 11);
 		contentPane.add(logo);
@@ -177,27 +177,7 @@ public class Stock_view extends JFrame {
 		search_panel.add(searchtf);
 		searchtf.setColumns(10);
 		
-		/* Search Icon "Button" */
-		JLabel search_icon = new JLabel(new ImageIcon("C:\\Users\\Declan\\eclipse-workspace\\stock-application-330-project-2\\src\\img\\search_icon.png")); // Needs to be relative.
-		search_icon.addMouseListener(new MouseListener() {
-			
-			public void mouseReleased(MouseEvent e) { makeMenuItems(searchtf.getText().toString()); } // Where the magic happens.
-
-			@Override
-			public void mouseClicked(MouseEvent e) { /* Sleep */ }
-
-			@Override
-			public void mousePressed(MouseEvent e) { /* Sleep */ }
-
-			@Override
-			public void mouseEntered(MouseEvent e) { /* Sleep */ }
-
-			@Override
-			public void mouseExited(MouseEvent e) { /* Sleep */ }
-			
-		});
-		search_icon.setBounds(250, 25, 25, 25);
-		search_panel.add(search_icon);
+		
 		
 		/* Selection JPanel to contain the selection BUY/SELL Functions */
 		JPanel selection_panel = new JPanel();
@@ -273,6 +253,33 @@ public class Stock_view extends JFrame {
 		search_panel.add(clear_btn);
 		/* End of clear button block*/
 		
+		/* Search Icon "Button" */
+		JLabel search_icon = new JLabel(new ImageIcon(".\\src\\img\\search_icon.png")); // Needs to be relative.
+		search_icon.addMouseListener(new MouseListener() {
+			
+			public void mouseReleased(MouseEvent e) { 
+				clear_flag = true;
+				ss_name_lb.setText("");
+				ss_symbol_lb.setText("");
+				ss_value_lb.setText("");
+				dtm.setRowCount(0);
+				makeMenuItems(searchtf.getText().toString()); } // Where the magic happens.
+
+			@Override
+			public void mouseClicked(MouseEvent e) { /* Sleep */ }
+
+			@Override
+			public void mousePressed(MouseEvent e) { /* Sleep */ }
+
+			@Override
+			public void mouseEntered(MouseEvent e) { /* Sleep */ }
+
+			@Override
+			public void mouseExited(MouseEvent e) { /* Sleep */ }
+			
+		});
+		search_icon.setBounds(250, 25, 25, 25);
+		search_panel.add(search_icon);
 		
 		/* JPanel to contain all user portfolio information */
 		JPanel portfolio_panel = new JPanel();
@@ -331,16 +338,16 @@ public class Stock_view extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				Double withdrawAmount = 0.00;
 				if(USER.getBuyingPower() == 0.00) {
-					JOptionPane.showMessageDialog(getContentPane(), "Insufficient buying power to withdraw!");
+					JOptionPane.showMessageDialog(getContentPane(), "Insufficient buying power to withdraw!", "Error", JOptionPane.ERROR_MESSAGE);
 				} else {
 					withdrawAmount = -100.00;
 					while(USER.getBuyingPower() < withdrawAmount || withdrawAmount == -100) {
 						withdrawAmount = Double.parseDouble(JOptionPane.showInputDialog("Enter how much money you would like to withdraw:"));
 						if(withdrawAmount > USER.getBuyingPower())
-							JOptionPane.showMessageDialog(getContentPane(), "You cannot withdraw more funds than you have available!");
+							JOptionPane.showMessageDialog(getContentPane(), "You cannot withdraw more funds than you have available!", "Error", JOptionPane.ERROR_MESSAGE);
 					}
 					USER.setBuyingPower(USER.getBuyingPower() - withdrawAmount);
-					buying_power_tf.setText("$" + String.format("%.2f", USER.getBuyingPower()));
+					buying_power_tf.setText("$" + String.format("%,3.2f", USER.getBuyingPower()));
 				}
 				
 			}
@@ -355,7 +362,7 @@ public class Stock_view extends JFrame {
 				while(returnedDeposit < 0)
 					returnedDeposit = Integer.parseInt(JOptionPane.showInputDialog("Enter how much money you wish to add:"));
 				USER.setBuyingPower(USER.getBuyingPower() + returnedDeposit);
-				buying_power_tf.setText("$" + String.format("%.2f", USER.getBuyingPower()));
+				buying_power_tf.setText("$" + String.format("%,3.2f", USER.getBuyingPower()));
 			}
 		});
 		increase_bp_btn.setBounds(10, 300, 175, 50);
@@ -371,7 +378,7 @@ public class Stock_view extends JFrame {
 					bswindow.setVisible(true);
 					
 				} else {
-					JOptionPane.showMessageDialog(getContentPane(), "No stock selected!");
+					JOptionPane.showMessageDialog(getContentPane(), "No stock selected!", "Error", JOptionPane.ERROR_MESSAGE);
 				}
 			}
 		};
@@ -413,10 +420,10 @@ public class Stock_view extends JFrame {
 		ActionListener taskPerformer = new ActionListener() {
 			public void actionPerformed(ActionEvent evt) {
 				Double total = USER.getBuyingPower() + USER.getStockValue() + calculateGain();
-				String tv = String.format("%.2f", total);
-				String bp = String.format("%.2f", USER.getBuyingPower());
-				String sv = String.format("%.2f", USER.getStockValue());
-				String cg = String.format("%.2f", calculateGain());
+				String tv = String.format("%,3.2f", total);
+				String bp = String.format("%,3.2f", USER.getBuyingPower());
+				String sv = String.format("%,3.2f", USER.getStockValue());
+				String cg = String.format("%,3.2f", calculateGain());
 				
 				total_value_tf.setText("$" + tv); // Updates total value text field.
 				buying_power_tf.setText("$" + bp); // Updates the buying power text field.
@@ -424,7 +431,7 @@ public class Stock_view extends JFrame {
 				current_gain_tf.setText("$" + cg); // Updates the stock value text field.
 				for(int count = 0; count < 10; count++) { // Checks for non-null held stock array to update the table.
 					if(current_stocks.isNullAt(count) == false) {
-						String gainloss = String.format("%.2f", current_stocks.getGainLoss(count));
+						String gainloss = String.format("%,3.2f", current_stocks.getGainLoss(count));
 						hold_dtm.setValueAt(current_stocks.getNewStockValueAt(count), count, 1); // Updates the price.
 						hold_dtm.setValueAt(gainloss, count, 2); // Updates the GainLoss.
 						hold_dtm.setValueAt(current_stocks.getStocksBoughtAt(count), count, 3); // Update the # of stocks bought.
